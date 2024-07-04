@@ -4,10 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script defer src="assets/js/homepage.js"></script>
   </head>
-  <body
-    class="bg-fixed bg-cover bg-center"
-    style="background-image: url(./assets/images/HomePageBackground.jpg)"
-  ></body>
+  <body class="bg-fixed bg-cover bg-center homepage-bg relative">
+    <header>
+      <button
+        id="menuButton"
+        class="absolute top-4 left-4 p-2 bg-gray-800 bg-opacity-30 text-white rounded"
+      >
+        Menu
+      </button>
+    </header>
+    <main>
+      <div
+        id="menu"
+        class="fixed top-0 left-0 h-full w-80 bg-white text-gray-900 transform -translate-x-full transition-transform z-10 flex flex-col"
+      >
+        <ul class="flex-grow">
+          <li><a href="#recipe1" class="block p-4">Recipe 1</a></li>
+          <li><a href="#recipe2" class="block p-4">Recipe 2</a></li>
+          <li><a href="#recipe3" class="block p-4">Recipe 3</a></li>
+          <li><a href="#recipe4" class="block p-4">Recipe 4</a></li>
+          <li><a href="#recipe5" class="block p-4">Recipe 5</a></li>
+        </ul>
+        <footer class="mt-auto">
+          <a href="#about" class="block p-4">About</a>
+        </footer>
+      </div>
+      <div
+        id="overlay"
+        class="fixed inset-0 hidden bg-black bg-opacity-50"
+      ></div>
+      <!-- TODO: Add light/dark mode toggle on top right -->
+      <!-- TODO: Add Logo on lower right -->
+    </main>
+    <footer></footer>
+  </body>
 </html>
