@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/assets/css/style.css" />
     <script defer src="assets/js/homepage.js"></script>
   </head>
-  <body class="bg-fixed bg-cover bg-center homepage-bg relative">
+  <body class="homepage-bg bg-fixed bg-cover bg-center relative">
     <header>
       <button
         id="menuButton"
@@ -26,21 +26,21 @@
         class="fixed top-0 left-0 h-full w-80 bg-white text-gray-900 transform -translate-x-full transition-transform z-10 flex flex-col"
       >
         <ul class="flex-shrink p-2">
-          <li class="block p-4 text-xl">Select a Recipe:</li>
+          <li class="block pl-2 pb-4 text-xl">Select a Recipe:</li>
           <li>
-            <a href="#recipe1" class="block pl-4 p-2 text-xl">Adobo Chicken</a>
+            <a href="#adoboChicken" class="block p-2 text-xl">Adobo Chicken</a>
           </li>
           <li>
-            <a href="#recipe2" class="block pl-4 p-2 text-xl">Al Pastor Pork</a>
+            <a href="#alPastorPork" class="block p-2 text-xl">Al Pastor Pork</a>
           </li>
           <li>
-            <a href="#recipe3" class="block pl-4 p-2 text-xl">Birria Beef</a>
+            <a href="#birriaBeef" class="block p-2 text-xl">Birria Beef</a>
           </li>
           <li>
-            <a href="#recipe4" class="block pl-4 p-2 text-xl">Carne Asada</a>
+            <a href="#carneAsada" class="block p-2 text-xl">Carne Asada</a>
           </li>
           <li>
-            <a href="#recipe5" class="block pl-4 p-2 text-xl"
+            <a href="#cauliflowerTacos" class="block p-2 text-xl"
               >Cauliflower Tacos</a
             >
           </li>
@@ -48,6 +48,17 @@
         <footer class="flex-shrink mt-auto">
           <a href="#about" class="block p-4">About</a>
         </footer>
+      </div>
+      <div
+        id="logoBackground"
+        class="fixed bottom-5 left-0 bg-gradient-to-r from-transparent to-white flex-shrink items-center"
+      >
+        <img
+          id="logo"
+          src="./assets/logo/YesChefLogoBlack.svg"
+          alt="Yes, Chef Logo"
+          class="relative ml-auto mr-4"
+        />
       </div>
       <div
         id="overlay"
