@@ -15,7 +15,7 @@
     <header>
       <button
         id="menuButton"
-        class="absolute top-4 left-4 p-2 bg-gray-800 bg-opacity-30 text-white rounded"
+        class="absolute top-10 left-10 p-2 bg-gray-800 bg-opacity-30 text-white rounded"
       >
         Menu
       </button>
@@ -25,14 +25,27 @@
         id="menu"
         class="fixed top-0 left-0 h-full w-80 bg-white text-gray-900 transform -translate-x-full transition-transform z-10 flex flex-col"
       >
-        <ul class="flex-grow">
-          <li><a href="#recipe1" class="block p-4">Recipe 1</a></li>
-          <li><a href="#recipe2" class="block p-4">Recipe 2</a></li>
-          <li><a href="#recipe3" class="block p-4">Recipe 3</a></li>
-          <li><a href="#recipe4" class="block p-4">Recipe 4</a></li>
-          <li><a href="#recipe5" class="block p-4">Recipe 5</a></li>
+        <ul class="flex-shrink p-2">
+          <li class="block p-4 text-xl">Select a Recipe:</li>
+          <li>
+            <a href="#recipe1" class="block pl-4 p-2 text-xl">Adobo Chicken</a>
+          </li>
+          <li>
+            <a href="#recipe2" class="block pl-4 p-2 text-xl">Al Pastor Pork</a>
+          </li>
+          <li>
+            <a href="#recipe3" class="block pl-4 p-2 text-xl">Birria Beef</a>
+          </li>
+          <li>
+            <a href="#recipe4" class="block pl-4 p-2 text-xl">Carne Asada</a>
+          </li>
+          <li>
+            <a href="#recipe5" class="block pl-4 p-2 text-xl"
+              >Cauliflower Tacos</a
+            >
+          </li>
         </ul>
-        <footer class="mt-auto">
+        <footer class="flex-shrink mt-auto">
           <a href="#about" class="block p-4">About</a>
         </footer>
       </div>
