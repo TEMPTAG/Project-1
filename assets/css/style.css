@@ -7,7 +7,12 @@
 }
 
 .homepage-bg {
-  background-image: url("/assets/images/HomePageBackground.jpg");
+  background-image: url("../images/HomePageBackground.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
 }
 
 #logo {
@@ -22,23 +27,23 @@
 }
 
 .alPastor-bg {
-  background-image: url("/assets/images/AlPastorBackground.jpg");
+  background-image: url("../images/AlPastorBackground.jpg");
 }
 
 .birria-bg {
-  background-image: url("/assets/images/BirriaBackground.jpg");
+  background-image: url("../images/BirriaBackground.jpg");
 }
 
 .carneAsada-bg {
-  background-image: url("/assets/images/CarneAsadaBackground.jpg");
+  background-image: url("../images/CarneAsadaBackground.jpg");
 }
 
 .cauliflower-bg {
-  background-image: url("/assets/images/CauliflowerBackground.jpg");
+  background-image: url("../images/CauliflowerBackground.jpg");
 }
 
 .chicken-bg {
-  background-image: url("/assets/images/ChickenBackground.jpg");
+  background-image: url("../images/ChickenBackground.jpg");
 }
 
 .overlay-active::before {
