@@ -1,1 +1,1 @@
-const timerChipotle = 15;
+document.addEventListener()
