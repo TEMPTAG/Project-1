@@ -39,7 +39,7 @@ Coming Soon...
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/TEMPTAG/Project-1?authorFilter=MaceOtt&color=blue)
 
-- [Email](mason.mavier.ott@gmail.com)
+- [Email](mason.xavier.ott@gmail.com)
 - [LinkedIn]()
 - [GitHub](https://github.com/MaceOtt)
 
