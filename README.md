@@ -63,6 +63,14 @@ _All image assets are licensed through Adobe Stock for use on this project. Logo
 
 ---
 
+## Credits
+
+Custom CSS & JS Modal: https://www.w3schools.com/howto/howto_css_modals.asp
+Favicon: https://www.w3schools.com/html/html_favicon.asp
+Tailwind CSS: https://tailwindcss.com/
+
+---
+
 ## License
 
 This student project is under the MIT License. The details of the [LICENSE](./LICENSE) can be seen in the linked file.
