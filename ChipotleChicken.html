@@ -5,69 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Al Pastor Cooking Guide</title>
     <link rel="stylesheet" href="./assets/css/cooking.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+
+  <!-- need to add light and dark mode -->
+   <!-- fix menu button -->
   <body
     class="bg-fixed bg-cover bg-center"
     style="background-image: url(./assets/images/ChipotleChickenBackground.jpg)"
   >
-    <header class="background">Let's Start Cooking Chipotle Chicken!</header>
+    <header 
+      id="logoBackgroundSmall"
+      class="bg-gradient-to-r from-transparent to-white flex-shrink text-center uppercase"
+    >
+      <button
+        id="menuButton"
+        class="absolute top-10 left-10 p-2 bg-gray-800 bg-opacity-30 text-white rounded"
+      >
+        Menu
+      </button>
+      <img
+        id="logoSmall"
+        src="./assets/logo/YesChefLogoBlack.svg"
+        alt="Yes, Chef Logo"
+        class="relative ml-auto mr-4"
+      />Let's Start Cooking Chipotle Chicken!
+    </header>
+    <br />
+    <!-- add resizing for webpage -->
     <main>
-      <section>
-        <h2>Marinate the chicken thighs</h2>
+      <section class="p-4 bg-white bg-opacity-40 rounded w-max mx-auto">
+        <h2>Marinate the chicken thighs:</h2>
+        <article class="indent-5">
+          <!-- fix chef note, put on pop up-->
         <p>
-          1. Place the Chicken Thighs in a resealable bag, or large bowl. *Chef
-          note: poke a few holes in the Chicken Thighs with a fork for even
+          1. Place the Chicken Thighs in a resealable bag, or large bowl. 
+          <button type="button" class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center">*Chef note</button>
+          poke a few holes in the Chicken Thighs with a fork for even
           better results
         </p>
         <br />
+        <!-- fix chef note, put in pop up -->
         <p>
-          2. Place the Chicken Thighs in a resealable bag, or large bowl. *Chef
-          note: poke a few holes in the Chicken Thighs with a fork for even
+          2. Place the Chicken Thighs in a resealable bag, or large bowl. 
+          <button type="button" class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center" >*Chef note</button>
+          poke a few holes in the Chicken Thighs with a fork for even
           better results
         </p>
         <br />
         <p>3. Seal the bag or the bowl and place in the refrigerator</p>
         <br />
+        <!-- fix chef note, put in pop up -->
         <p>
-          4. Allow the meat to marinate for at least an hour *Chef note: it is
-          best if it is allowed to marinate overnight
+          4. Allow the meat to marinate for at least an hour. <button >*Chef note</button>
+          it isbest if it is allowed to marinate overnight
         </p>
+        </article>
         <br />
       </section>
-      <section>
+      <br />
+      <section class="p-4 bg-white bg-opacity-40 rounded w-max mx-auto">
         <h3>Cook the Chicken Thighs</h3>
         <br />
+        <article class="indent-5">
+          <!-- fix chef note, put in pop ip, need to add countdown timer -->
         <p>
-          1. Remove the Chicken Thighs from the refrigerator *Chef Note: Set the
-          bowl or resealable bag out on the counter for 30-45min before cooking
+          1. Remove the Chicken Thighs from the refrigerator. <button type="button" class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center">*Chef Note</button>
+          Set the bowl or resealable bag out on the counter for 30-45min before cooking
         </p>
         <br />
+        <!-- fix chef note, put it in pop ip -->
         <p>
-          2. Preheat your BBQ grill before cooking *Chef Note: the hotter the
-          better, as getting a little char on the marinade really brings out the
-          flavor
+          2. Preheat your BBQ grill before cooking. <button type="button" class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center">*Chef Note</button>
+          the hotter the better, as getting a little char on the marinade really brings out the flavor
         </p>
         <br />
+        <!-- need to add countdown timmer, auto refresh when timer hits 0 -->
         <p>3. Sear the Chicken Thighs 2min per side on the hot grill</p>
         <br />
+        <!-- fix chef note, put it in pop ip -->
         <p>
           4. Cook the Chicken Thighs until they are cooked through; 165-175
-          degrees internal temperature *Chef note: Chicken Thighs cook rather
-          quickly on a hot grill, so keep a close eye on them
+          degrees internal temperature. <button type="button" class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center">*Chef note</button>
+          Chicken Thighs cook rather quickly on a hot grill, so keep a close eye on them
         </p>
         <br />
+        <!-- fix chet note, put it in pop up-->
         <p>
           5. Let the Chicken Thighs rest for 10 minutes after they have been
           cooked, then serve in your favorite tacos, burritos, or as a
-          stand-alone meat with your meal *Chef note: the Chicken Thighs will
-          continue to cook while they rest, so make sure you plan for that in
+          stand-alone meat with your meal.<button type="button" class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center">*Chef note</button>
+          the Chicken Thighs will continue to cook while they rest, so make sure you plan for that in
           your cooking time and temperature
         </p>
+      </article>
         <br />
       </section>
     </main>
-
     <script src="./cooking.js"></script>
   </body>
 </html>
