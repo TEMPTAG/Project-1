@@ -39,7 +39,7 @@ Coming Soon...
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/TEMPTAG/Project-1?authorFilter=MaceOtt&color=blue)
 
-- [Email](mason.mavier.ott@gmail.com)
+- [Email](mason.xavier.ott@gmail.com)
 - [LinkedIn]()
 - [GitHub](https://github.com/MaceOtt)
 
@@ -60,6 +60,14 @@ Coming Soon...
 - [GitHub](https://github.com/TEMPTAG)
 
 _All image assets are licensed through Adobe Stock for use on this project. Logos are owned by Ian Ferguson and licened for use on this project._
+
+---
+
+## Credits
+
+Custom CSS & JS Modal: https://www.w3schools.com/howto/howto_css_modals.asp
+Favicon: https://www.w3schools.com/html/html_favicon.asp
+Tailwind CSS: https://tailwindcss.com/
 
 ---
 
