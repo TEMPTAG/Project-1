@@ -4,29 +4,121 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Al Pastor Cooking Guide</title>
-    <link rel="stylesheet" href="cooking.css"/>
+    <link rel="stylesheet" href="./assets/css/cooking.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./assets/js/homepage.js"></script>
   </head>
-  <body class="bg-fixed bg-cover bg-center" style="background-image: url(./assets/images/AlPastorBackground.jpg)">
-    <header 
-      id="logoBackgroundSmall"
-      class="bg-gradient-to-r from-transparent to-white flex-shrink text-center uppercase"
+  <body
+  class="alPastor-bg relative"
+>
+  <header
+    id="logoBackgroundSmall"
+    class="bg-gradient-to-r from-transparent to-white flex-shrink text-center uppercase"
+  >
+    <button
+      id="menuButton"
+      class="absolute top-10 left-10 p-2 bg-gray-800 bg-opacity-30 text-white rounded"
     >
-      <button
-        id="menuButton"
-        class="absolute top-10 left-10 p-2 bg-gray-800 bg-opacity-30 text-white rounded"
-      >
-        Menu
-      </button>
-      <img
-        id="logoSmall"
-        src="./assets/logo/YesChefLogoBlack.svg"
-        alt="Yes, Chef Logo"
-        class="relative ml-auto mr-4"
-      />Let's Start Cooking Al Pastor!
-    </header>
-    <br />
-
+      Menu
+    </button>
+    <img
+      id="logoSmall"
+      src="./assets/logo/YesChefLogoBlack.svg"
+      alt="Yes, Chef Logo"
+      class="relative ml-auto mr-4"
+    />Let's Start Cooking Al Pastor!
+  </header>
+  <div id="menuContainer"></div>
+<br>
+  <main>
+    <section class="p-4 bg-white bg-opacity-40 rounded w-max mx-auto">
+      <h2>Prepare the marinade:</h2>
+      <article class="indent-5">
+        <p>
+          1. Pound the Pork slices so they are even thickness.
+        </p>
+        <br>
+        <p>
+          2.Place them in the refrigerator until it is time to cook.
+        </p>
+      </article>
+    </section>
+    <br>
+    <section class="p-4 bg-white bg-opacity-40 rounded w-max mx-auto">
+      <h3>Prepare the marinade:</h3>
+      <article class="indent-5">
+        <p>
+          1.In a pan over medium heat, lightly brown the onions and garlic in olive oil.
+        </p>
+      <br>
+        <p>
+          2.Once lightly browned, add the seeded and stemmed guajillo chiles and bay leaves. Saute for 1-2 minutes.
+        </p>
+      <br>
+        <p>
+          3.Add 1/4 of water, and the 1/4 cup of Apple Cider Vinegar.
+        </p>
+      <br> 
+        <p>
+          4.Cover on low heat for 10 minutes, then turn off heat and let it cool.
+        </p>
+      <br> 
+        <p>
+          5.Pour contents of the pan into the blender with the spices (Salt, Cumin, Oregano, Black Pepper, and All Spice), 
+          Chipotle Chiles, Chicken Stock, and Pineapple Juice, and blend until very smooth.
+        </p>
+      <br> 
+        <p>
+          6.Pour the contents of the blender through a fine-mesh strainer into a large bowl. 
+          Push the blended marinade through the strainer until no liquid remains. Discard the solids <button
+          type="button"
+          class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center"
+        >
+          *Chef note
+        </button>
+        You can also keep the solids to make an incredible salsa...
+        </p>
+      <br> 
+        <p>
+          7.Mix the Pork slices into the large bowl of marinade until they are coated. 
+          Cover and put back into the refrigerator to marinate for 4-24 hours.
+        </p>
+      <br>
+      </article>
+    </section>
+<br>
+    <section class="p-4 bg-white bg-opacity-40 rounded w-max mx-auto">
+      <h4>Cooking the Pork</h4>
+      <article class="indent-5">
+        <p>
+          1.Preheat your bbq grill to as hot as possible. <button
+          type="button"
+          class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center"
+        >
+          *Chef note
+        </button>
+          A little char of the marinade on the pork brings out incredible flavors
+        </p>
+    <br> 
+        <p>
+          2.Cook the Pork on the grill until an internal temperature of 160 degrees
+        </p>
+    <br>
+      <p>
+          3.Slice and cook Pineapple slices on the grill alongside the Pork for best flavor
+      </p>
+    <br>
+      <p>
+          4.Once cooked fully, remove the Pork from the Grill and let it rest for a minimum of 10 minutes
+      </p>
+    <br> 
+      <p>
+          5.Dice the Pork and Pineapple. Serve in tacos, burritos, or any of your other favorite meals.
+      </p>
+    <br>
+      </article>
+    </section>  
 
     <script src="cooking.js"></script>
   </body>
