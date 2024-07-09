@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List with Buttons</title>
-    <link rel="stylesheet" href="\stlye.css">
+    <title></title>
+    <link rel="stylesheet" href="">
 </head>
 <body>
-    <h1>List with Buttons</h1>
 
     <div id="mainList">
         <ul id="itemsList">
@@ -30,10 +29,10 @@
         <ul id="checklist"></ul>
     </div>
 
-    <script src="\logic.js"></script>
+    <script src=""></script>
 </body>
 </html>
-*/
+
 function addItemToList(itemText) {
     const checklist = document.getElementById('checklist');
     const li = document.createElement('li');
@@ -47,4 +46,71 @@ function addItemToList(itemText) {
     
     li.appendChild(removeButton);
     checklist.appendChild(li);
+}
+
+
+function addItemToList(itemText) {
+
+let itemArray = [
+    {item: itemText}
+  ]
+
+  if(box not checked/) {
+    add to array
+  }
+
+  
+
+    localStorage.storage.setItem('itemArray', JSON.stringify(itemArray));
+
+    const checklist = document.getElementById('checklist');
+    const li = document.createElement('li');
+    li.textContent = itemText;
+    
+    const removeButton = document.createElement('button');
+    removeButton.textContent = 'Remove';
+    removeButton.addEventListener('click', function() {
+        checklist.removeChild(li);
+    });
+    
+    li.appendChild(removeButton);
+    checklist.appendChild(li);
+}
+*/
+
+const openModalButtons = document.querySelectorAll('[data-modal-target]')
+const closeModalButtons = document.querySelectorAll('[data-close-button]')
+const overlay = document.getElementById('overlay')
+
+openModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget)
+    openModal(modal)
+  })
+})
+
+overlay.addEventListener('click', () => {
+  const modals = document.querySelectorAll('.modal.active')
+  modals.forEach(modal => {
+    closeModal(modal)
+  })
+})
+
+closeModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal')
+    closeModal(modal)
+  })
+})
+
+function openModal(modal) {
+  if (modal == null) return
+  modal.classList.add('active')
+  overlay.classList.add('active')
+}
+
+function closeModal(modal) {
+  if (modal == null) return
+  modal.classList.remove('active')
+  overlay.classList.remove('active')
 }
