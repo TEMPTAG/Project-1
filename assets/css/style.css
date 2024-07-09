@@ -1,8 +1,9 @@
 :root {
   font-family: "Neue Montreal", sans-serif;
-  --menu-background: white;
-  --light-font: white;
-  --dark-font: rgb(44, 44, 44);
+  --menu-background-light: white;
+  --menu-background-dark: rgb(44, 44, 44);
+  --light-font: rgb(44, 44, 44);
+  --dark-font: white;
 }
 
 .homepage-bg {

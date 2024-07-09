@@ -1,6 +1,30 @@
 document.addEventListener("DOMContentLoaded", () => {
   const menuButton = document.getElementById("menuButton");
+  const themeButton = document.getElementById("themeButton");
+  const logo = document.getElementById("logo");
   const body = document.body;
+
+  // Change Theme
+  function setTheme(theme) {
+    localStorage.setItem("theme", theme);
+    body.className = theme;
+    logo.src =
+      theme === "dark"
+        ? "./assets/logo/YesChefLogoWhite.png"
+        : "./assets/logo/YesChefLogoBlack.png";
+    console.log("Theme set to", theme);
+  }
+
+  // Load theme from local storage
+  const savedTheme = localStorage.getItem("theme") || "light";
+  setTheme(savedTheme);
+
+  // Theme button functionality
+  themeButton.addEventListener("click", () => {
+    const currentTheme = body.className;
+    const newTheme = currentTheme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+  });
 
   // Fetch and load menu
   fetch("menu.html")
