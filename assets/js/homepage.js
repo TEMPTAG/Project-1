@@ -7,11 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
   // Change Theme
   function setTheme(theme) {
     localStorage.setItem("theme", theme);
-    body.className = theme;
+    body.classList.remove("light", "dark");
+    body.classList.add(theme);
     logo.src =
       theme === "dark"
-        ? "./assets/logo/YesChefLogoWhite.png"
-        : "./assets/logo/YesChefLogoBlack.png";
+        ? "./assets/logo/YesChefLogoWhite.svg"
+        : "./assets/logo/YesChefLogoBlack.svg";
     console.log("Theme set to", theme);
   }
 
@@ -21,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Theme button functionality
   themeButton.addEventListener("click", () => {
-    const currentTheme = body.className;
+    const currentTheme = body.classList.contains("light") ? "light" : "dark";
     const newTheme = currentTheme === "light" ? "dark" : "light";
     setTheme(newTheme);
   });
