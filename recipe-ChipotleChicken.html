@@ -86,15 +86,44 @@
       <section
         class="flex-grow m-4 bg-white bg-opacity-80 text-gray-900 rounded w-max mx-auto"
       >
-        <button class="m-4 p-2 bg-gray-800 bg-opacity-50 text-white rounded">
-          Generate Shopping List</button
-        ><a
+      <button data-modal-target="#modal" class="m-4 p-2 bg-gray-800 bg-opacity-50 text-white rounded">Generate Shopping List</button>
+      <div class="modal" id="modal">
+        <div class="modal-header">
+          <div class="title">Shopping List</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+          List of items<br>
+          List of items<br>
+          List of items<br>
+          List of items<br>
+          List of items<br>
+          List of items<br>
+          List of items<br>
+          List of items<br>
+          List of items<br>
+          List of items<br>
+          List of items<br>
+          List of items<br>
+        </div>
+      </div>
+      <div id="overlay"></div>
+        <a
           href="./ChipotleChicken.html"
           class="m-4 p-2 bg-gray-800 bg-opacity-50 text-white rounded"
         >
           I have everything! Let's Cook!
         </a>
       </section>
+      
+
+      
+
+
+
+
+
     </main>
+    <script src="assets\js\recipe.js"></script>
   </body>
 </html>
