@@ -4,12 +4,133 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Al Pastor Cooking Guide</title>
-    <link rel="stylesheet" href="cooking.css"/>
+    <link rel="stylesheet" href="cooking.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-fixed bg-cover bg-center" style="background-image: url(./assets/images/CarneAsadaBackground.jpg)">
+  <body class="carneAsada-bg relative">
+    <header
+      id="logoBackgroundSmall"
+      class="bg-gradient-to-r from-transparent to-white flex-shrink text-center uppercase"
+    >
+      <button
+        id="menuButton"
+        class="absolute top-10 left-10 p-2 bg-gray-800 bg-opacity-30 text-white rounded"
+      >
+        Menu
+      </button>
+      <img
+        id="logoSmall"
+        src="./assets/logo/YesChefLogoBlack.svg"
+        alt="Yes, Chef Logo"
+        class="relative ml-auto mr-4"
+      />Let's Start Cooking Carne Asada!
+    </header>
+    <div id="menuContainer"></div>
 
-
-    <script src="cooking.js"></script>
+    <main>
+      <br />
+      <section class="p-4 bg-white bg-opacity-40 rounded w-max mx-auto">
+        <h2>Prepare the marinade:</h2>
+        <article class="indent-5">
+          <p>
+            1. Preheat the broiler, place the Jalepeños on a baking sheet and
+            broil until skin begins to turn black, then flip and repeat on the
+            other side
+          </p>
+          <br />
+          <p>2.Stem, seed, and skin the Jalapeños into a blender</p>
+          <br />
+          <p>3. Core and quarter the Tomato, and add to the blender</p>
+          <br />
+          <p>
+            4. Peel and quarter the Onion, and add 3 of the quarters into the
+            blender
+          </p>
+          <br />
+          <p>5. Peel the Garlic and add to the blender</p>
+          <br />
+          <p>
+            6. Juice the Orange, and add the juice to the blender - save the
+            rind of the orange
+          </p>
+          <br />
+          <p>7. Juice 2 of the Limes, and add the juice to the blender</p>
+          <br />
+          <p>
+            8. Rinse the cilantro and cut the bottom 2" off of the stems, add
+            half of the bunch to the blender
+          </p>
+          <br />
+          <p>
+            9.Finally, add the Ancho Chili Powder, Sugar, Salt, Black Pepper,
+            Mirin, Avocado Oil and blend until smooth
+          </p>
+        </article>
+      </section>
+      <br />
+      <section class="p-4 bg-white bg-opacity-40 rounded w-max mx-auto">
+        <h3>Marinate the Arrachera:</h3>
+        <article class="indent-5">
+          <p>
+            1. Add the Arrachera to a large bowl or zip lock bag (might take a
+            couple of bags)
+          </p>
+          <br />
+          <p>
+            2. Slice half of the Orange Rind and the last 1/4 of the Onion into
+            1/4" slices and add to the Marinade
+          </p>
+          <br />
+          <p>3. Mix the Corona with the Marinade.</p>
+          <br />
+          <p>
+            4. Mix the meat in the marinade, seal, and let it marinate in the
+            refrigerator for 24 hours.
+          </p>
+          <br />
+          <p>5. Flip the meat in the marinade halfway through</p>
+        </article>
+      </section>
+      <br />
+      <section class="p-4 bg-white bg-opacity-40 rounded w-max mx-auto">
+        <h4>Marinate the chicken thighs:</h4>
+        <article class="indent-5">
+          <p>
+            1.Put your grill on as high of heat as possible. <button
+            type="button"
+            class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center"
+          >
+            *Chef note
+          </button>
+          he hotter the better, as a little bit of char on the outside of the meat makes for amazing flavor!
+          </p>
+          <br/>
+          <p>
+            2. Lightly oil the grill with some Avocado oil
+          </p>
+          <br/>
+          <p>
+            3. Cook the Arrachera until desired temperature <button
+            type="button"
+            class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center"
+          >
+            *Chef note
+          </button>
+          The thin Arrachera cooks very fast, so do not leave it unattended!
+          </p>
+          <br/>
+          <p>
+            4. Let stand for 10 minutes after removing from the grill and slice against the grain
+          </p>
+          <br/>
+          <p>
+            5. Serve with sliced Lime wedges from the remaining lime, and diced Cilantro
+          </p>
+          <br/>
+        </article>
+      </section>
+          
+    </main>
   </body>
 </html>
