@@ -102,9 +102,7 @@
   z-index: 1;
 }
 
-
-
-.modal {
+/* .modal {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -164,4 +162,4 @@
 #overlay.active {
   opacity: 1;
   pointer-events: all;
-}
+} */
