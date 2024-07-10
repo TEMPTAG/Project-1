@@ -33,6 +33,7 @@
       />Let's Start Cooking Chipotle Chicken!
     </header>
     <div id="menuContainer"></div>
+    <br>
     <!-- add resizing for webpage -->
     <main>
       <section class="p-4 bg-white bg-opacity-40 rounded w-max mx-auto">
@@ -56,9 +57,7 @@
           <br />
           <!-- fix chef note, put in pop up -->
           <p>
-            4. Allow the meat to marinate for at least an hour.
-            <button>*Chef note</button>
-            it isbest if it is allowed to marinate overnight
+            4. Allow the meat to marinate for at least an hour.<button class="text-black bg-red-200 hover:bg-red-300 font-medium rounded-full text-sm px-5 text-center">Timer</button> <button class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center before:content-['Chef_Note'] hover:before:content-['it_isbest_if_it_is_allowed_to_marinate_overnight']"></button> 
           </p>
         </article>
         <br />
@@ -84,7 +83,7 @@
           </p>
           <br />
           <!-- need to add countdown timmer, auto refresh when timer hits 0 -->
-          <p>3. Sear the Chicken Thighs 2min per side on the hot grill</p>
+          <p>3. Sear the Chicken Thighs 2min per side on the hot grill <button class="text-black bg-red-200 hover:bg-red-300 font-medium rounded-full text-sm px-5 text-center">Timer</button></p>
           <br />
           <!-- fix chef note, put it in pop up -->
           <p>
@@ -100,13 +99,20 @@
           <p>
             5. Let the Chicken Thighs rest for 10 minutes after they have been
             cooked, then serve in your favorite tacos, burritos, or as a
-            stand-alone meat with your meal.<button class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center before:content-['Chef_Note'] hover:before:content-['the_Chicken_Thighs_will_continue_to_cook_while_they_rest,_so_make_sure_you_plan_for_that_in_your_cooking_time_and_temperature']">
-            </button>
+            stand-alone meat with your meal.
+            <button class="text-black bg-red-200 hover:bg-red-300 font-medium rounded-full text-sm px-5 text-center">Timer</button>
+            <button class="group flex relative">
+              <span class="text-black bg-red-500 hover:bg-red-300 font-medium rounded-full text-sm px-5 text-center">Chef Note</span>
+              <span class="group-hover:opacity-75 transition-opacity bg-white px-2 text-sm text-black rounded-lg absolute opacity-0 m-5 mx-auto">the_Chicken_Thighs_will_continue_to_cook_while_they_rest,_so_make_sure_you_plan_for_that_in_your_cooking_time_and_temperature</span> 
+          </button>
+            <!-- <button class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center before:content-['Chef_Note'] hover:before:content-['the_Chicken_Thighs_will_continue_to_cook_while_they_rest,_so_make_sure_you_plan_for_that_in_your_cooking_time_and_temperature']">
+            </button> -->
           </p>
         </article>
         <br />
       </section>
     </main>
+    <script src="./assets/js/cooking.js"></script>
   </body>
 </html>
 
