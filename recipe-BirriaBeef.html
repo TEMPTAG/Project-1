@@ -14,7 +14,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
     />
+<<<<<<< HEAD
+    <script defer src="./assets/js/homepage.js"></script>
+    <script defer src="assets\js\recipe.js"></script>
+=======
     <script defer src="./assets/js/menu.js"></script>
+>>>>>>> 5282e81a4d456ddcb6556a6a24529c8f73eed069
   </head>
   <body class="birria-bg relative">
     <header
@@ -48,74 +53,74 @@
         <h2>Ingredients:</h2>
         <ul>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" />5lbs Beef Chuck Roast
+            <input type="checkbox" class="ingredient-checkbox mr-2" />5lbs Beef Chuck Roast
           </li>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" />
+            <input type="checkbox" class="ingredient-checkbox mr-2" />
             2 Roma Tomatoes
           </li>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" />
+            <input type="checkbox" class="ingredient-checkbox mr-2" />
             1/2 Yellow Onion
           </li>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" />
+            <input type="checkbox" class="ingredient-checkbox mr-2" />
             12 Dried Guajillo Chiles
           </li>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" />
+            <input type="checkbox" class="ingredient-checkbox mr-2" />
             5 Ancho Chiles
           </li>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" />
+            <input type="checkbox" class="ingredient-checkbox mr-2" />
             5 Árbol Chiles
           </li>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" />
+            <input type="checkbox" class="ingredient-checkbox mr-2" />
             2 Cups of Beef Broth
           </li>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" />
+            <input type="checkbox" class="ingredient-checkbox mr-2" />
             1/4 Cup White Vinegar (Distilled)
           </li>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" />
+            <input type="checkbox" class="ingredient-checkbox mr-2" />
             5 Garlic Cloves
           </li>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" />
+            <input type="checkbox" class="ingredient-checkbox mr-2" />
             1 1/2 Tablespoon Olive Oil
           </li>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" />
+            <input type="checkbox" class="ingredient-checkbox mr-2" />
             1/2 Tablespoon Kosher Salt
           </li>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" />
+            <input type="checkbox" class="ingredient-checkbox mr-2" />
             1/2 Tablespoon Black Pepper
           </li>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" />
+            <input type="checkbox" class="ingredient-checkbox mr-2" />
             1 Teaspoon Ground Cumin
           </li>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" />
+            <input type="checkbox" class="ingredient-checkbox mr-2" />
             1 Teaspon Dried Mexican Oregano
           </li>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" />
+            <input type="checkbox" class="ingredient-checkbox mr-2" />
             1/2 Teaspoon Whole Black Peppercorns
           </li>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" />
+            <input type="checkbox" class="ingredient-checkbox mr-2" />
             1/4 Teaspoon Ground Cloves
           </li>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" />
+            <input type="checkbox" class="ingredient-checkbox mr-2" />
             2 2" Mexican Cinnamon Sticks
           </li>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" />
+            <input type="checkbox" class="ingredient-checkbox mr-2" />
             3 Bay Leaves
           </li>
         </ul>
@@ -124,15 +129,33 @@
       <section
         class="flex-grow m-4 bg-white bg-opacity-80 text-gray-900 rounded w-max mx-auto"
       >
-        <button class="m-4 p-2 bg-gray-800 bg-opacity-50 text-white rounded">
+        <button
+          id="generateShoppingList"
+          class="m-4 p-2 bg-gray-800 bg-opacity-50 text-white rounded"
+        >
           Generate Shopping List</button
         ><a
-          href="./BirriaBeef.html"
+          href="./AlPastor.html"
           class="m-4 p-2 bg-gray-800 bg-opacity-50 text-white rounded"
         >
           I have everything! Let's Cook!
         </a>
+        <p id="errorMessage" class="text-red-500"></p>
       </section>
+      <div
+      id="shoppingListModal"
+      class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden"
+    >
+      <div class="bg-white rounded-lg p-6 w-1/2">
+        <h2 class="text-2xl font-medium mb-4">Shopping List</h2>
+        <ul id="shoppingList" class="list-disc list-inside"></ul>
+        <button
+          id="closeModal"
+          class="mt-4 p-2 bg-gray-800 bg-opacity-50 text-white rounded"
+        >
+          Shopping Done!  Let's cook!
+        </button>
+      </div>
     </main>
   </body>
 </html>
