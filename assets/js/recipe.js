@@ -33,6 +33,8 @@
 </body>
 </html>
 
+
+//checklist
 function addItemToList(itemText) {
     const checklist = document.getElementById('checklist');
     const li = document.createElement('li');
@@ -47,21 +49,21 @@ function addItemToList(itemText) {
     li.appendChild(removeButton);
     checklist.appendChild(li);
 }
+
 
 
 function addItemToList(itemText) {
 
 let itemArray = [
     {item: itemText}
-  ]
+  ];
 
-  if(box not checked/) {
-    add to array
-  }
-
-  
+  if(!checkbox.checked) {
+    itemArray.push("itemText");
 
     localStorage.storage.setItem('itemArray', JSON.stringify(itemArray));
+  }
+
 
     const checklist = document.getElementById('checklist');
     const li = document.createElement('li');
@@ -76,11 +78,19 @@ let itemArray = [
     li.appendChild(removeButton);
     checklist.appendChild(li);
 }
+
+
+
+
+
+
 */
+
+
 
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
-const overlay = document.getElementById('overlay')
+const overlay = document.getElementById('overlayModal')
 
 openModalButtons.forEach(button => {
   button.addEventListener('click', () => {
@@ -114,3 +124,22 @@ function closeModal(modal) {
   modal.classList.remove('active')
   overlay.classList.remove('active')
 }
+
+
+/*
+const uncheckedItem = document.querySelectorAll('.checkItem');
+
+function addItemToList(itemText) {
+  let itemArray = [];
+
+  uncheckedItem.forEach(checkbox => {
+  
+    if(!checkbox.checked) {
+      itemArray.push(itemText);
+
+    }
+    
+  });
+  console.log(itemArray);
+}
+  */
