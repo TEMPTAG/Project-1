@@ -79,14 +79,16 @@ let itemArray = [
     checklist.appendChild(li);
 }
 
+const checkboxEl = document.
 
+checkboxEl
 
 
 
 
 */
 
-
+/*
 
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
@@ -125,12 +127,34 @@ function closeModal(modal) {
   overlay.classList.remove('active')
 }
 
+*/
+
+const checkboxEl = document.querySelectorAll('input[type="checkbox"]');
+
+function addItemToList() {
+  let itemArray = JSON.parse(localStorage.getItem('itemArray')) || [];
+
+  checkboxEl.forEach((checkbox) => {
+    if(!checkbox.checked) {
+      const itemText = checkbox.getAttribute('data-item');
+      itemArray.push(itemText);
+    }
+  });
+  
+    localStorage.setItem('itemArray', JSON.stringify(itemArray));
+}
+
+  
+
+
 
 /*
 const uncheckedItem = document.querySelectorAll('.checkItem');
 
 function addItemToList(itemText) {
   let itemArray = [];
+
+
 
   uncheckedItem.forEach(checkbox => {
   
