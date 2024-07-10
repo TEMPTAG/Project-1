@@ -4,24 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cauliflower Tacos Cooking Guide</title>
-    <link rel="stylesheet" href="cooking.css"/>
+    <link rel="stylesheet" href="cooking.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="./assets/js/homepage.js"></script>
+    <script defer src="./assets/js/menu.js"></script>
   </head>
 
   <body class="cauliflower-bg relative">
-   <header 
-   id="logoBackgroundSmall"
-   class="bg-gradient-to-r from-transparent to-white flex-shrink text-center uppercase"
- >
-   <button
-     id="menuButton"
-     class="absolute top-10 left-10 p-2 bg-gray-800 bg-opacity-30 text-white rounded"
-   >
-     Menu
-   </button>
-   <img
+    <header
+      id="logoBackgroundSmall"
+      class="bg-gradient-to-r from-transparent to-white flex-shrink text-center uppercase"
+    >
+      <button
+        id="menuButton"
+        class="absolute top-10 left-10 p-2 bg-gray-800 bg-opacity-30 text-white rounded"
+      >
+        Menu
+      </button>
+      <img
         id="logoSmall"
         src="./assets/logo/YesChefLogoBlack.svg"
         alt="Yes, Chef Logo"
@@ -29,113 +29,127 @@
       />Let's Start Cooking Cauliflower Taco's
     </header>
     <div id="menuContainer"></div>
-    <br/>
+    <br />
     <main>
       <section class="p-4 bg-white bg-opacity-40 rounded w-max mx-auto">
-        <h2> Cook the Cauliflower</h2>
-        <article  class="indent-5">
+        <h2>Cook the Cauliflower</h2>
+        <article class="indent-5">
           <p>
-            1. reheat oven to 400 degrees with one rack in the middle position, and one in the bottom position
-          </p>  
-          <br />
-          <p>
-            2. Rinse the Cauliflower and cut into bite-sized florets
+            1. reheat oven to 400 degrees with one rack in the middle position,
+            and one in the bottom position
           </p>
           <br />
+          <p>2. Rinse the Cauliflower and cut into bite-sized florets</p>
+          <br />
           <p>
-            3. Toss Cauliflower in a large bowl with the Cumin, Ancho Chili Powder, Paprika, and Salt.
+            3. Toss Cauliflower in a large bowl with the Cumin, Ancho Chili
+            Powder, Paprika, and Salt.
           </p>
           <br />
           <div id="cookingTimer">
-          <p id="cookingTimerDisplay" class="">
-            4. Spread the Cauliflower on a lined baking sheet and place on the bottom rack of the oven to roast for 20min <button class="text-black bg-red-200 hover:bg-red-300 font-medium rounded-full text-sm px-5 text-center">Timer</button> <button class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center before:content-['Chef_Note'] hover:before:content-['Check_Cauliflower_at_20_min,_if_it_is_not_golden_brown_and_tender,_roast_for_another_5_min']">
-          </button>
-          </p>
-        </div>
+            <p id="cookingTimerDisplay" class="">
+              4. Spread the Cauliflower on a lined baking sheet and place on the
+              bottom rack of the oven to roast for 20min
+              <button
+                class="text-black bg-red-200 hover:bg-red-300 font-medium rounded-full text-sm px-5 text-center"
+              >
+                Timer
+              </button>
+              <button
+                class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center before:content-['Chef_Note'] hover:before:content-['Check_Cauliflower_at_20_min,_if_it_is_not_golden_brown_and_tender,_roast_for_another_5_min']"
+              ></button>
+            </p>
+          </div>
           <br />
           <p>
-            5. Remove from the Oven, prepare the tacos, and serve as fresh as possible <button class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center before:content-['Chef_Note'] hover:before:content-['Prepare_the_taco_components_before_the_Cauliflower_is_done_roasting_so_you_can_build_the_tacos_and_serve_immediately']">
-          </button>
+            5. Remove from the Oven, prepare the tacos, and serve as fresh as
+            possible
+            <button
+              class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center before:content-['Chef_Note'] hover:before:content-['Prepare_the_taco_components_before_the_Cauliflower_is_done_roasting_so_you_can_build_the_tacos_and_serve_immediately']"
+            ></button>
           </p>
         </article>
-        </section>
-        <br />
-        <section class="p-4 bg-white bg-opacity-40 rounded w-max mx-auto">
-          <h3>Make the Chipotle Sauce:</h3>
-          <article class="indent-5">
-            <p>
-              1. On another lined baking sheet, add the 1/4 cup of Raw Almonds and 4 Garlic Cloves with skin.n
-            </p>  
-            <br />
-            <p>
-              2. Roast the Almonds and Garlic Cloves with Skin on the middle rack for 8min <button class="text-black bg-red-200 hover:bg-red-300 font-medium rounded-full text-sm px-5 text-center">Timer</button> <button class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center before:content-['Chef_Note'] hover:before:content-['Check_at_8min_to_see_if_the_Almonds_are_dark_and_starting_to_split;_if_not_continue_roasting-for_2-4_more_minutes_-_do_not_let_the_Almonds_burn']">
-
+      </section>
+      <br />
+      <section class="p-4 bg-white bg-opacity-40 rounded w-max mx-auto">
+        <h3>Make the Chipotle Sauce:</h3>
+        <article class="indent-5">
+          <p>
+            1. On another lined baking sheet, add the 1/4 cup of Raw Almonds and
+            4 Garlic Cloves with skin.n
+          </p>
+          <br />
+          <p>
+            2. Roast the Almonds and Garlic Cloves with Skin on the middle rack
+            for 8min
+            <button
+              class="text-black bg-red-200 hover:bg-red-300 font-medium rounded-full text-sm px-5 text-center"
+            >
+              Timer
             </button>
-            
-            </p>
-            <br />
-            <p>
-              3. When the Almonds and Garlic Cloves with Skin are done roasting, remove them from the oven and set aside
-            </p>
-            <br />
-            <p>
-              4. Drain the can of Fire-Roasted Tomatoes and add to a blender or food processor along with the roasted Almonds, 
-              roasted Garlic Cloves (remove skin), raw Garlic Cloves, Avocado Oil, the juice from the Lime, Paprika, Cumin, Salt, Honey, 
-              and 1 can of Chipotle Peppers in Adobo sauce
-            </p>
-            <br />
-            <p>
-              5. Blend on high until very smooth
-            </p>
-            <br />
-            <p>
-              6. Chef's unpopular extra step: Put the sauce in the refrigerator so it is cool with put on top of the fresh roasted Cauliflower 
-              when the tacos are assembled - it lightly melts the sauce and brings out great flavors while introducing a temperature dynamic to 
-              hese tacos that have an incredible textual dynamic
-            </p>
-          </article>
-          </section>
+            <button
+              class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center before:content-['Chef_Note'] hover:before:content-['Check_at_8min_to_see_if_the_Almonds_are_dark_and_starting_to_split;_if_not_continue_roasting-for_2-4_more_minutes_-_do_not_let_the_Almonds_burn']"
+            ></button>
+          </p>
           <br />
-          <section class="p-4 bg-white bg-opacity-40 rounded w-max mx-auto">
-            <h4> Prepare the taco components:</h4>
-            <article class="indent-5">
-              <p>
-                1. Slice the Lime to serve wedges alongside the Tacos.
-              </p>
-              <br />
-              <p>
-                2. Half, deseed, skin and thinly slice the Avocado.
-              </p>
-              <br />
-              <p>
-                3. Rinse and very thinly slice the Red Cabbage <button class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center before:content-['Chef_Note'] hover:before:content-['Also_very_good_if_it_is_cold_from_the_refrigerator_at_time_of_plating']">
-              </button>
-             
-              </p>
-              <br />
-              <p>
-                4. Rinse and dice the Cilantro
-              </p>
-              <br />
-              <p>
-                5. Heat the Tortillas in a pan on the stove
-              </p>
-              <br />
-            </article>
-          </section>
+          <p>
+            3. When the Almonds and Garlic Cloves with Skin are done roasting,
+            remove them from the oven and set aside
+          </p>
           <br />
-          <section class="p-4 bg-white bg-opacity-40 rounded w-max mx-auto">
-            <h5>Plating the Tacos:</h5>
-            <article class="indent-5">
-              <p>
-                Put the Cauliflower in a tortilla with a generous portion of the Chipotle Sauce. 
-                Sprinkle some Red Cabbage and Cilantro on top. The Avocado can be served in the taco or on the side. Serve with a Lime Wedge. Enjoy!
-              </p>
-            </article>
-          </section>
-          <script src="./assets/js/cooking.js"></script>
+          <p>
+            4. Drain the can of Fire-Roasted Tomatoes and add to a blender or
+            food processor along with the roasted Almonds, roasted Garlic Cloves
+            (remove skin), raw Garlic Cloves, Avocado Oil, the juice from the
+            Lime, Paprika, Cumin, Salt, Honey, and 1 can of Chipotle Peppers in
+            Adobo sauce
+          </p>
+          <br />
+          <p>5. Blend on high until very smooth</p>
+          <br />
+          <p>
+            6. Chef's unpopular extra step: Put the sauce in the refrigerator so
+            it is cool with put on top of the fresh roasted Cauliflower when the
+            tacos are assembled - it lightly melts the sauce and brings out
+            great flavors while introducing a temperature dynamic to hese tacos
+            that have an incredible textual dynamic
+          </p>
+        </article>
+      </section>
+      <br />
+      <section class="p-4 bg-white bg-opacity-40 rounded w-max mx-auto">
+        <h4>Prepare the taco components:</h4>
+        <article class="indent-5">
+          <p>1. Slice the Lime to serve wedges alongside the Tacos.</p>
+          <br />
+          <p>2. Half, deseed, skin and thinly slice the Avocado.</p>
+          <br />
+          <p>
+            3. Rinse and very thinly slice the Red Cabbage
+            <button
+              class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center before:content-['Chef_Note'] hover:before:content-['Also_very_good_if_it_is_cold_from_the_refrigerator_at_time_of_plating']"
+            ></button>
+          </p>
+          <br />
+          <p>4. Rinse and dice the Cilantro</p>
+          <br />
+          <p>5. Heat the Tortillas in a pan on the stove</p>
+          <br />
+        </article>
+      </section>
+      <br />
+      <section class="p-4 bg-white bg-opacity-40 rounded w-max mx-auto">
+        <h5>Plating the Tacos:</h5>
+        <article class="indent-5">
+          <p>
+            Put the Cauliflower in a tortilla with a generous portion of the
+            Chipotle Sauce. Sprinkle some Red Cabbage and Cilantro on top. The
+            Avocado can be served in the taco or on the side. Serve with a Lime
+            Wedge. Enjoy!
+          </p>
+        </article>
+      </section>
+      <script src="./assets/js/cooking.js"></script>
     </main>
-
-    
   </body>
 </html>

@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
     />
-    <script defer src="./assets/js/homepage.js"></script>
+    <script defer src="./assets/js/menu.js"></script>
     <script defer src="assets\js\recipe.js"></script>
   </head>
   <body class="chicken-bg relative">
@@ -49,37 +49,72 @@
         <h2>Ingredients:</h2>
         <ul>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" data-item="3lbs Boneless, Skinless Chicken Thighs">
+            <input
+              type="checkbox"
+              class="mr-2"
+              data-item="3lbs Boneless, Skinless Chicken Thighs"
+            />
             3lbs Boneless, Skinless Chicken Thighs
           </li>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" data-item="1 Red Onion">1 Red Onion
+            <input type="checkbox" class="mr-2" data-item="1 Red Onion" />1 Red
+            Onion
           </li>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" data-item="1 Can of Chipotle Chilis in">1 Can of Chipotle Chilis in
-            Adobo Sauce
+            <input
+              type="checkbox"
+              class="mr-2"
+              data-item="1 Can of Chipotle Chilis in"
+            />1 Can of Chipotle Chilis in Adobo Sauce
           </li>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" data-item="6 Cloves of Garlic">6 Cloves of Garlic
+            <input
+              type="checkbox"
+              class="mr-2"
+              data-item="6 Cloves of Garlic"
+            />6 Cloves of Garlic
           </li>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" data-item="4 Tablespoons of Ancho Chili">4 Tablespoons of Ancho Chili
-            Powder
+            <input
+              type="checkbox"
+              class="mr-2"
+              data-item="4 Tablespoons of Ancho Chili"
+            />4 Tablespoons of Ancho Chili Powder
           </li>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" data-item="4 Teaspoons of Ground Cumin">4 Teaspoons of Ground Cumin
+            <input
+              type="checkbox"
+              class="mr-2"
+              data-item="4 Teaspoons of Ground Cumin"
+            />4 Teaspoons of Ground Cumin
           </li>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" data-item="14 Teaspoons of Mexican Oregano">4 Teaspoons of Mexican Oregano
+            <input
+              type="checkbox"
+              class="mr-2"
+              data-item="14 Teaspoons of Mexican Oregano"
+            />4 Teaspoons of Mexican Oregano
           </li>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" data-item="2 Teaspoons of Salt">2 Teaspoons of Salt
+            <input
+              type="checkbox"
+              class="mr-2"
+              data-item="2 Teaspoons of Salt"
+            />2 Teaspoons of Salt
           </li>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" data-item="1 Teaspoon of Black Pepper">1 Teaspoon of Black Pepper
+            <input
+              type="checkbox"
+              class="mr-2"
+              data-item="1 Teaspoon of Black Pepper"
+            />1 Teaspoon of Black Pepper
           </li>
           <li class="flex items-center">
-            <input type="checkbox" class="mr-2" data-item="4 Tablespoons of Olive Oil">4 Tablespoons of Olive Oil
+            <input
+              type="checkbox"
+              class="mr-2"
+              data-item="4 Tablespoons of Olive Oil"
+            />4 Tablespoons of Olive Oil
           </li>
         </ul>
       </section>
@@ -87,19 +122,25 @@
       <section
         class="flex-grow m-4 bg-white bg-opacity-80 text-gray-900 rounded w-max mx-auto"
       >
-      <button onclick="addItemToList()" data-modal-target="#modal" class="m-4 p-2 bg-gray-800 bg-opacity-50 text-white rounded">Generate Shopping List</button>
-      <div class="modal" id="modal">
-        <div class="modal-header">
-          <div class="title">Shopping List</div>
-          <button data-close-button class="close-button">&times;</button>
+        <button
+          onclick="addItemToList()"
+          data-modal-target="#modal"
+          class="m-4 p-2 bg-gray-800 bg-opacity-50 text-white rounded"
+        >
+          Generate Shopping List
+        </button>
+        <div class="modal" id="modal">
+          <div class="modal-header">
+            <div class="title">Shopping List</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p class="error">
+              Please select ingredients to add to your shopping list
+            </p>
+          </div>
         </div>
-        <div class="modal-body">
-          <p class="error">
-            Please select ingredients to add to your shopping list
-          </p>
-        </div>
-      </div>
-      <div id="overlayModal"></div>
+        <div id="overlayModal"></div>
         <a
           href="./ChipotleChicken.html"
           class="m-4 p-2 bg-gray-800 bg-opacity-50 text-white rounded"
@@ -107,15 +148,6 @@
           I have everything! Let's Cook!
         </a>
       </section>
-      
-
-      
-
-
-
-
-
     </main>
-   
   </body>
 </html>
