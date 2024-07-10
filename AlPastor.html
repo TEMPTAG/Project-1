@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Al Pastor Cooking Guide</title>
-    <link rel="stylesheet" href="cooking.css"/>
+    <link rel="stylesheet" href="cooking.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="cooking.js"></script>
+    <script defer src="./assets/js/menu.js"></script>
   </head>
-  <body class="bg-fixed bg-cover bg-center" style="background-image: url(./assets/images/AlPastorBackground.jpg)">
-    <header 
+  <body
+    class="bg-fixed bg-cover bg-center"
+    style="background-image: url(./assets/images/AlPastorBackground.jpg)"
+  >
+    <header
       id="logoBackgroundSmall"
       class="bg-gradient-to-r from-transparent to-white flex-shrink text-center uppercase"
     >
@@ -25,9 +30,6 @@
         class="relative ml-auto mr-4"
       />Let's Start Cooking Al Pastor!
     </header>
-    <br />
-
-
-    <script src="cooking.js"></script>
+    <div id="menuContainer"></div>
   </body>
 </html>
