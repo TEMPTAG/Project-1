@@ -62,7 +62,7 @@ function showShoppingListModal() {
 function closeShoppingListModal() {
   const shoppingListModal = document.querySelector("#shoppingListModal");
   shoppingListModal.classList.add("hidden");
-  window.location.href = "AlPastor.html";
+  // window.location.href = "AlPastor.html";
 }
 
 const generateShoppingListButton = document.querySelector(
@@ -72,4 +72,3 @@ generateShoppingListButton.addEventListener("click", addIngredients);
 
 const closeModalButton = document.querySelector("#closeModal");
 closeModalButton.addEventListener("click", closeShoppingListModal);
-
