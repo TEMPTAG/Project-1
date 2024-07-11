@@ -14,34 +14,38 @@
     <script defer src="./assets/js/tailwind.config.js"></script>
     <script defer src="./assets/js/logic.js"></script>
   </head>
-  <body class="bg-about relative">
+  <body class="bg-about bg-fixed bg-cover bg-contain bg-no-repeat bg-center text-black dark:text-white"
+  >
+
+    <div class="bg-transparent dark:bg-black/20 fixed inset-0 pointer-events-none"></div>
+
     <header
       id="logoBackgroundSmall"
-      class="bg-gradient-to-r from-transparent to-white flex-shrink"
+      class="bg-gradient-to-r from-transparent dark:from-transparent to-white/50 dark:to-zinc-800/50 flex-shrink"
     >
       <button
         id="menuButton"
-        class="absolute top-10 left-10 p-2 bg-gray-800 bg-opacity-30 text-white rounded"
+        class="absolute top-10 left-10 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded"
       >
         Menu
       </button>
       <img
-        id="logoSmall"
+        id="logo"
         src="./assets/logo/YesChefLogoBlack.svg"
         alt="Yes, Chef Logo"
-        class="relative ml-auto mr-4"
+        class="relative ml-auto mr-4 h-36"
       />
     </header>
     <div id="menuContainer"></div>
     <main class="flex flex-col">
       <section
-        class="m-4 p-4 bg-white bg-opacity-80 text-gray-900 rounded w-max mx-auto"
+        class="m-4 p-4 bg-white dark:bg-zinc-800/70 text-zinc-900 dark:text-white rounded w-max mx-auto"
       >
         <h1 class="text-4xl font-medium">Project Contributors:</h1>
       </section>
       <section class="flex flex-row gap-4 m-4 p-4">
         <section
-          class="flex flex-col items-center m-4 p-4 bg-white bg-opacity-80 text-gray-900 rounded max-w-fit mx-auto"
+          class="flex flex-col items-center m-4 p-4 bg-white/80 dark:bg-zinc-800/70 text-zinc-900 dark:text-white rounded max-w-fit mx-auto"
         >
           <img class="bioImage" src="" alt="" />
           <h2 class="m-2 p-2 text-4xl font-medium">Mason Ott</h2>
@@ -60,26 +64,26 @@
           <section class="flex flex-row justify-center m-4">
             <a
               href="mailto:mason.xavier.ott@gmail.com"
-              class="m-2 p-2 bg-gray-800 bg-opacity-30 text-white rounded"
+              class="m-2 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded"
               target="_blank"
               >Email</a
             >
             <a
               href="https://github.com/MaceOtt"
-              class="m-2 p-2 bg-gray-800 bg-opacity-30 text-white rounded"
+              class="m-2 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded"
               target="_blank"
               >GitHub Profile</a
             >
             <a
               href="https://www.linkedin.com"
-              class="m-2 p-2 bg-gray-800 bg-opacity-30 text-white rounded"
+              class="m-2 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded"
               target="_blank"
               >LinkedIn</a
             >
           </section>
         </section>
         <section
-          class="flex flex-col items-center m-4 p-4 bg-white bg-opacity-80 text-gray-900 rounded max-w-fit mx-auto"
+        class="flex flex-col items-center m-4 p-4 bg-white/80 dark:bg-zinc-800/70 text-zinc-900 dark:text-white rounded max-w-fit mx-auto"
         >
           <img class="bioImage" src="" alt="" />
           <h2 class="m-2 p-2 text-4xl font-medium">Jesse Anderson</h2>
@@ -89,26 +93,26 @@
           <section class="flex flex-row justify-center m-4">
             <a
               href="mailto:lmntrylmnt@gmail.com"
-              class="m-2 p-2 bg-gray-800 bg-opacity-30 text-white rounded"
+              class="m-2 p-2 bg-gray-800 bg-opacity-30 text-white dark:text-zinc-300 rounded"
               target="_blank"
               >Email</a
             >
             <a
               href="https://github.com/Vtencouchclimbr"
-              class="m-2 p-2 bg-gray-800 bg-opacity-30 text-white rounded"
+              class="m-2 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded"
               target="_blank"
               >GitHub Profile</a
             >
             <a
               href="https://www.linkedin.com"
-              class="m-2 p-2 bg-gray-800 bg-opacity-30 text-white rounded"
+              class="m-2 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded"
               target="_blank"
               >LinkedIn</a
             >
           </section>
         </section>
         <section
-          class="flex flex-col items-center m-4 p-4 bg-white bg-opacity-80 text-gray-900 rounded max-w-fit mx-auto"
+        class="flex flex-col items-center m-4 p-4 bg-white/80 dark:bg-zinc-800/70 text-zinc-900 dark:text-white rounded max-w-fit mx-auto"
         >
           <img class="bioImage" src="" alt="" />
           <h2 class="m-2 p-2 text-4xl font-medium">Ian Ferguson</h2>
@@ -127,19 +131,19 @@
           <section class="flex flex-row justify-center m-4">
             <a
               href="mailto:iansterlingferguson@gmail.com"
-              class="m-2 p-2 bg-gray-800 bg-opacity-30 text-white rounded"
+              class="m-2 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded"
               target="_blank"
               >Email</a
             >
             <a
               href="https://github.com/TEMPTAG"
-              class="m-2 p-2 bg-gray-800 bg-opacity-30 text-white rounded"
+              class="m-2 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded"
               target="_blank"
               >GitHub Profile</a
             >
             <a
               href="https://www.linkedin.com/in/ianferguson/"
-              class="m-2 p-2 bg-gray-800 bg-opacity-30 text-white rounded"
+              class="m-2 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded"
               target="_blank"
               >LinkedIn</a
             >
@@ -147,17 +151,25 @@
         </section>
       </section>
       <section
-      class="flex flex-col items-center m-4 p-4 bg-white bg-opacity-80 text-gray-900 rounded max-w-fit mx-auto"
-    >
+      class="flex flex-col items-center m-4 p-4 bg-white/80 dark:bg-zinc-800/70 text-zinc-900 dark:text-white rounded max-w-fit mx-auto"
+      >
       <h2 class="m-2 p-2 text-4xl font-medium">Project GitHub Repository:</h2>
       <section class="flex flex-row justify-center m-4">
         <a
           href="https://github.com/TEMPTAG/Project-1"
-          class="p-2 bg-gray-800 bg-opacity-30 text-white rounded"
+          class="p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded"
           target="_blank"
           >Project 1</a
         >
       </section>
     </main>
+    <footer>
+      <button
+        id="themeButton"
+        class="absolute bottom-10 left-10 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded"
+      >
+        ◑ Theme
+      </button>
+    </footer>
   </body>
 </html>
