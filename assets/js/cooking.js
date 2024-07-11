@@ -35,6 +35,7 @@ timer2.addEventListener("click", timerC2)
 
 
 
+
 const timer3 = document.querySelector("#timer3")
 
 let timer3value = 600
@@ -50,3 +51,20 @@ timer3.textContent = timer3value
 timer3.addEventListener("click", timerC3)
 
 
+
+
+
+
+const timer5 = document.querySelector("#timer5")
+
+let timer5value = 1200
+function timerC5() {
+if (this.textContent==="Timer"){
+
+setInterval(function(){
+timer5value-=1
+timer5.textContent = timer5value
+},1000)
+}
+}
+timer5.addEventListener("click", timerC5)
