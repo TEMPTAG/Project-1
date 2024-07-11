@@ -62,7 +62,7 @@ function showShoppingListModal() {
 function closeShoppingListModal() {
   const shoppingListModal = document.querySelector("#shoppingListModal");
   shoppingListModal.classList.add("hidden");
- window.location.href = modifiedUrl;
+  window.location.href = modifiedUrl;
 }
 
 const generateShoppingListButton = document.querySelector(
@@ -73,14 +73,14 @@ generateShoppingListButton.addEventListener("click", addIngredients);
 const closeModalButton = document.querySelector("#closeModal");
 closeModalButton.addEventListener("click", closeShoppingListModal);
 
-  function getCurrentPageUrl() {
-    return window.location.href;
+function getCurrentPageUrl() {
+  return window.location.href;
 }
 
 function removeTextFromUrl(textToRemove) {
-    let currentPageUrl = getCurrentPageUrl();
-    let modifiedUrl = currentPageUrl.replace(textToRemove, '');
-    return modifiedUrl;
+  let currentPageUrl = getCurrentPageUrl();
+  let modifiedUrl = currentPageUrl.replace(textToRemove, "");
+  return modifiedUrl;
 }
 
 let textToRemove = "recipe-";
