@@ -62,7 +62,7 @@ function showShoppingListModal() {
 function closeShoppingListModal() {
   const shoppingListModal = document.querySelector("#shoppingListModal");
   shoppingListModal.classList.add("hidden");
-  window.location.href = "AlPastor.html";
+ window.location.href = modifiedUrl;
 }
 
 const generateShoppingListButton = document.querySelector(
@@ -73,3 +73,16 @@ generateShoppingListButton.addEventListener("click", addIngredients);
 const closeModalButton = document.querySelector("#closeModal");
 closeModalButton.addEventListener("click", closeShoppingListModal);
 
+  function getCurrentPageUrl() {
+    return window.location.href;
+}
+
+function removeTextFromUrl(textToRemove) {
+    let currentPageUrl = getCurrentPageUrl();
+    let modifiedUrl = currentPageUrl.replace(textToRemove, '');
+    return modifiedUrl;
+}
+
+let textToRemove = "recipe-";
+let modifiedUrl = removeTextFromUrl(textToRemove);
+console.log(modifiedUrl);
