@@ -1,15 +1,3 @@
-// Read Local Storage
-function readLocalStorage() {
-  return JSON.parse(localStorage.getItem("ingredients") || "[]");
-}
-
-// Store to local storage
-function storeToLocalStorage(ingredient) {
-  const ingredients = readLocalStorage();
-  ingredients.push(ingredient);
-  localStorage.setItem("ingredients", JSON.stringify(ingredients));
-}
-
 // Clear Local Storage
 function clearLocalStorage() {
   localStorage.removeItem("ingredients");
@@ -42,6 +30,18 @@ function addIngredients(event) {
   showShoppingListModal();
 }
 
+// Store to local storage
+function storeToLocalStorage(ingredient) {
+  const ingredients = readLocalStorage();
+  ingredients.push(ingredient);
+  localStorage.setItem("ingredients", JSON.stringify(ingredients));
+}
+
+// Read Local Storage
+function readLocalStorage() {
+  return JSON.parse(localStorage.getItem("ingredients") || "[]");
+}
+
 // Shopping List Pop-Up Modal
 function showShoppingListModal() {
   const shoppingListModal = document.querySelector("#shoppingListModal");
@@ -62,19 +62,12 @@ function showShoppingListModal() {
 function closeShoppingListModal() {
   const shoppingListModal = document.querySelector("#shoppingListModal");
   shoppingListModal.classList.add("hidden");
- window.location.href = modifiedUrl;
+  window.location.href = modifiedUrl;
 }
 
-const generateShoppingListButton = document.querySelector(
-  "#generateShoppingList"
-);
-generateShoppingListButton.addEventListener("click", addIngredients);
-
-const closeModalButton = document.querySelector("#closeModal");
-closeModalButton.addEventListener("click", closeShoppingListModal);
-
-  function getCurrentPageUrl() {
-    return window.location.href;
+// Read and amend current url
+function getCurrentPageUrl() {
+  return window.location.href;
 }
 
 function removeTextFromUrl(textToRemove) {
@@ -86,3 +79,12 @@ function removeTextFromUrl(textToRemove) {
 let textToRemove = "recipe-";
 let modifiedUrl = removeTextFromUrl(textToRemove);
 console.log(modifiedUrl);
+
+const generateShoppingListButton = document.querySelector(
+  "#generateShoppingList"
+);
+generateShoppingListButton.addEventListener("click", addIngredients);
+
+const closeModalButton = document.querySelector("#closeModal");
+closeModalButton.addEventListener("click", closeShoppingListModal);
+
