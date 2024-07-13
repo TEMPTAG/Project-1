@@ -11,31 +11,25 @@
     <script src="./assets/js/cooking.js"></script>
     <script defer src="./assets/js/logic.js"></script>
   </head>
-
-  <!-- need to add light and dark mode -->
-  <body class="chicken-bg relative">
-    <header
-      id="logoBackgroundSmall"
-      class="bg-gradient-to-r from-transparent to-white flex-shrink text-center uppercase"
-    >
-      <button
-        id="menuButton"
-        class="absolute top-10 left-10 p-2 bg-gray-800 bg-opacity-30 text-white rounded"
-      >
-        Menu
-      </button>
-      <img
-        id="logoSmall"
-        src="./assets/logo/YesChefLogoBlack.svg"
-        alt="Yes, Chef Logo"
-        class="relative ml-auto mr-4"
-      />Let's Start Cooking Chipotle Chicken!
-    </header>
-    <div id="menuContainer"></div>
-    <br />
     <!-- add resizing for webpage -->
+  <body class="bg-chicken bg-fixed bg-cover bg-contain bg-no-repeat bg-center text-black dark:text-white">
+
+    <div class="bg-transparent dark:bg-black/20 fixed inset-0 pointer-events-none"></div>
+
+    <header id="logoBackgroundSmall" class="bg-gradient-to-r from-transparent dark:from-transparent to-white/90 dark:to-zinc-800/90 flex-shrink">
+      <button id="menuButton" class="absolute top-10 left-10 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded">Menu</button>
+      <img id="logo" src="./assets/logo/YesChefLogoBlack.svg" alt="Yes, Chef Logo" class="relative ml-auto mr-4 h-36"/>
+    </header>
+
+    <div id="menuContainer"></div>
+
     <main>
-      <section class="p-4 bg-white bg-opacity-40 rounded w-max mx-auto">
+
+      <section class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto">
+        <h1 class="text-4xl font-medium">Let's Start Cooking Adobo Chicken</h1>
+      </section>
+  
+      <section class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto">
         <h2>Marinate the chicken thighs:</h2>
         <article class="indent-5">
           <!-- fix chef note, put in pop up-->
@@ -69,8 +63,8 @@
         </article>
         <br />
       </section>
-      <br />
-      <section class="p-4 bg-white bg-opacity-40 rounded w-max mx-auto">
+
+      <section class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto">
         <h3>Cook the Chicken Thighs</h3>
         <br />
         <article class="indent-5">
@@ -131,9 +125,16 @@
             </button> -->
           </p>
         </article>
-        <br />
       </section>
     </main>
+    <footer>
+      <button
+        id="themeButton"
+        class="absolute bottom-10 left-10 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded"
+      >
+        ◑ Theme
+      </button>
+    </footer>
   </body>
 </html>
 

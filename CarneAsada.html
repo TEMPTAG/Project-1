@@ -11,29 +11,43 @@
     <script defer src="./assets/js/cooking.js"></script>
     <script defer src="./assets/js/logic.js"></script>
   </head>
-  <body class="carneAsada-bg relative">
+  <body
+    class="bg-carne bg-fixed bg-cover bg-contain bg-no-repeat bg-center text-black dark:text-white"
+  >
+    <div
+      class="bg-transparent dark:bg-black/20 fixed inset-0 pointer-events-none"
+    ></div>
+
     <header
       id="logoBackgroundSmall"
-      class="bg-gradient-to-r from-transparent to-white flex-shrink text-center uppercase"
+      class="bg-gradient-to-r from-transparent dark:from-transparent to-white/90 dark:to-zinc-800/90 flex-shrink"
     >
       <button
         id="menuButton"
-        class="absolute top-10 left-10 p-2 bg-gray-800 bg-opacity-30 text-white rounded"
+        class="absolute top-10 left-10 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded"
       >
         Menu
       </button>
       <img
-        id="logoSmall"
+        id="logo"
         src="./assets/logo/YesChefLogoBlack.svg"
         alt="Yes, Chef Logo"
-        class="relative ml-auto mr-4"
-      />Let's Start Cooking Carne Asada!
+        class="relative ml-auto mr-4 h-36"
+      />
     </header>
+
     <div id="menuContainer"></div>
 
     <main>
-      <br />
-      <section class="p-4 bg-white bg-opacity-40 rounded w-max mx-auto">
+      <section
+        class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto"
+      >
+        <h1 class="text-4xl font-medium">Let's Start Cooking Carne Asada</h1>
+      </section>
+
+      <section
+        class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto"
+      >
         <h2>Prepare the marinade:</h2>
         <article class="indent-5">
           <p>
@@ -71,8 +85,10 @@
           </p>
         </article>
       </section>
-      <br />
-      <section class="p-4 bg-white bg-opacity-40 rounded w-max mx-auto">
+
+      <section
+        class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto"
+      >
         <h3>Marinate the Arrachera:</h3>
         <article class="indent-5">
           <p>
@@ -100,8 +116,10 @@
           <p>5. Flip the meat in the marinade halfway through</p>
         </article>
       </section>
-      <br />
-      <section class="p-4 bg-white bg-opacity-40 rounded w-max mx-auto">
+
+      <section
+        class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto"
+      >
         <h4>Cook the Marinated Arrachera</h4>
         <article class="indent-5">
           <p>
@@ -136,7 +154,6 @@
               >
             </button>
           </p>
-
           <br />
           <p>
             4. Let stand for 10 minutes after removing from the grill and slice
@@ -158,5 +175,13 @@
         </article>
       </section>
     </main>
+    <footer>
+      <button
+        id="themeButton"
+        class="absolute bottom-10 left-10 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded"
+      >
+        ◑ Theme
+      </button>
+    </footer>
   </body>
 </html>

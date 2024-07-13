@@ -17,19 +17,25 @@
   <body
     class="bg-home bg-fixed bg-cover bg-contain bg-no-repeat bg-center text-black dark:text-white"
   >
+    <div
+      class="bg-transparent dark:bg-black/20 fixed inset-0 pointer-events-none"
+    ></div>
+
     <header>
       <button
         id="menuButton"
-        class="absolute top-10 left-10 p-2 bg-gray-800 bg-opacity-30 text-white dark:text-gray-300 rounded"
+        class="absolute top-10 left-10 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded"
       >
         Menu
       </button>
     </header>
+
     <div id="menuContainer"></div>
+
     <main>
       <div
         id="logoBackground"
-        class="fixed bottom-5 left-0 bg-gradient-to-r from-transparent to-white flex-shrink items-center"
+        class="fixed bottom-5 left-0 bg-gradient-to-r from-transparent dark:from-transparent to-white/90 dark:to-zinc-800/90 flex-shrink items-center"
       >
         <img
           id="logo"
@@ -39,10 +45,11 @@
         />
       </div>
     </main>
+
     <footer>
       <button
         id="themeButton"
-        class="absolute bottom-10 left-10 p-2 bg-gray-800 bg-opacity-30 text-white rounded"
+        class="absolute bottom-10 left-10 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded"
       >
         ◑ Theme
       </button>

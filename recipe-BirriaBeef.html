@@ -10,43 +10,28 @@
       type="image/png"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-    />
-    <script defer src="./assets/js/homepage.js"></script>
-    <script defer src="assets\js\recipe.js"></script>
-    <script defer src="./assets/js/menu.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./assets/js/tailwind.config.js"></script>
+    <script defer src="./assets/js/recipe.js"></script>
+    <script defer src="./assets/js/logic.js"></script>
   </head>
-  <body class="birria-bg relative">
-    <header
-      id="logoBackgroundSmall"
-      class="bg-gradient-to-r from-transparent to-white flex-shrink"
-    >
-      <button
-        id="menuButton"
-        class="absolute top-10 left-10 p-2 bg-gray-800 bg-opacity-30 text-white rounded"
-      >
-        Menu
-      </button>
-      <img
-        id="logoSmall"
-        src="./assets/logo/YesChefLogoBlack.svg"
-        alt="Yes, Chef Logo"
-        class="relative ml-auto mr-4"
-      />
+  <body class="bg-birria bg-fixed bg-cover bg-contain bg-no-repeat bg-center text-black dark:text-white">
+
+    <div class="bg-transparent dark:bg-black/20 fixed inset-0 pointer-events-none"></div>
+
+    <header id="logoBackgroundSmall" class="bg-gradient-to-r from-transparent dark:from-transparent to-white/90 dark:to-zinc-800/90 flex-shrink">
+      <button id="menuButton" class="absolute top-10 left-10 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded">Menu</button>
+      <img id="logo" src="./assets/logo/YesChefLogoBlack.svg" alt="Yes, Chef Logo" class="relative ml-auto mr-4 h-36"/>
     </header>
+
     <div id="menuContainer"></div>
+
     <main>
-      <section
-        class="m-4 p-4 bg-white bg-opacity-80 text-gray-900 rounded w-max mx-auto"
-      >
-        <h1 class="text-4xl font-semibold">Birria Shredded Beef</h1>
+      <section class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto">
+        <h1 class="text-4xl font-medium">Birria Shredded Beef</h1>
       </section>
 
-      <section
-        class="m-4 p-4 bg-white bg-opacity-80 text-gray-900 rounded w-max mx-auto"
-      >
+      <section class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto">
         <h2>Ingredients:</h2>
         <ul>
           <li class="flex items-center">
@@ -124,16 +109,16 @@
       </section>
 
       <section
-        class="flex-grow m-4 bg-white bg-opacity-80 text-gray-900 rounded w-max mx-auto"
+        class="flex-grow m-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto"
       >
         <button
           id="generateShoppingList"
-          class="m-4 p-2 bg-gray-800 bg-opacity-50 text-white rounded"
+          class="m-4 p-2 bg-zinc-800/50 dark:bg-white/50 text-white rounded"
         >
           Generate Shopping List</button
         ><a
-          href="./AlPastor.html"
-          class="m-4 p-2 bg-gray-800 bg-opacity-50 text-white rounded"
+          href="./BirriaBeef.html"
+          class="m-4 p-2 bg-zinc-800/50 dark:bg-white/50 text-white rounded"
         >
           I have everything! Let's Cook!
         </a>
@@ -141,9 +126,9 @@
       </section>
       <div
       id="shoppingListModal"
-      class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden"
+      class="fixed inset-0 bg-zinc-800 bg-opacity-75 flex items-center justify-center hidden"
     >
-      <div class="bg-white rounded-lg p-6 w-1/2">
+      <div class="bg-white text-zinc-800 rounded-lg p-6 w-1/2">
         <h2 class="text-2xl font-medium mb-4">Shopping List</h2>
         <ul id="shoppingList" class="list-disc list-inside"></ul>
         <button
@@ -154,5 +139,13 @@
         </button>
       </div>
     </main>
+    <footer>
+      <button
+        id="themeButton"
+        class="absolute bottom-10 left-10 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded"
+      >
+        ◑ Theme
+      </button>
+    </footer>
   </body>
 </html>
