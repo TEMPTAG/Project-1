@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="./assets/js/tailwind.config.js"></script>
-    <script src="./assets/js/cooking.js"></script>
     <script defer src="./assets/js/logic.js"></script>
   </head>
     <!-- add resizing for webpage -->
@@ -53,7 +52,7 @@
           <!-- fix chef note, put in pop up -->
           <p>
             4. Allow the meat to marinate for at least an hour.
-            <button id="timer1" class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center">Timer</button>
+            <button id="timer1" class="top-10 left-10 p-1 bg-zinc-800/80 dark:bg-white text-white dark:text-zinc-800 text-sm rounded">1 Hour Timer</button>
             <button class="group flex-inline relative">
               <span class="text-black bg-red-500 hover:bg-red-300 font-medium rounded-full text-sm px-5 text-center">Chef Note</span>
               <span class="group-hover:opacity-75 transition-opacity bg-white px-2 text-sm text-black rounded-lg absolute opacity-0 m-5 mx-auto">the_Chicken_Thighs_will_continue_to_cook_while_they_rest,_so_make_sure_you_plan_for_that_in_your_cooking_time_and_temperature</span> 
@@ -93,16 +92,16 @@
           </p>
           <br />
           <!-- need to add countdown timmer, auto refresh when timer hits 0 -->
-          <p>3. Sear the Chicken Thighs 2min per side on the hot grill <button id="timer2" class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center">Timer</button></p>
+          <p>3. Sear the Chicken Thighs 2min per side on the hot grill <button id="timer2" class="top-10 left-10 p-1 bg-zinc-800/80 dark:bg-white text-white dark:text-zinc-800 text-sm rounded m-2">Timer</button></p>
           <br />
           <!-- fix chef note, put it in pop up -->
-          <p>
+          <p class="flex items-center">
             4. Cook the Chicken Thighs until they are cooked through; 165-175
             degrees internal temperature.
-            <button class="group flex-inline relative">
-              <span class="text-black bg-red-500 hover:bg-red-300 font-medium rounded-full text-sm px-5 text-center">Chef Note</span>
-              <span class="group-hover:opacity-75 transition-opacity bg-white px-2 text-sm text-black rounded-lg absolute opacity-0 m-5 mx-auto">the_Chicken_Thighs_will_continue_to_cook_while_they_rest,_so_make_sure_you_plan_for_that_in_your_cooking_time_and_temperature</span> 
-          </button>
+            <button class="group flex">
+              <img src="./assets/logo/YesChefFavicon180.png" alt="Chef note" class="max-w-8 m-2">
+              <span class="group-hover:opacity-75 bg-white text-sm text-black rounded-lg absolute opacity-0 m-3 ">the_Chicken_Thighs_will_continue_to_cook_while_they_rest,_so_make_sure_you_plan_for_that_in_your_cooking_time_and_temperature</span> 
+              </button>
            
            
             <!-- <button class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center before:content-['Chef_Note'] hover:before:content-['Chicken_Thighs_cook_rather_quickly_on_a_hot_grill,_so_keep_a_close_eye_on_them']">
@@ -112,30 +111,23 @@
           </p>
           <br />
           <!-- fix chet note, put it in pop up-->
-          <p>
+          <p class="flex flex- items-center">
             5. Let the Chicken Thighs rest for 10 minutes after they have been
             cooked, then serve in your favorite tacos, burritos, or as a
             stand-alone meat with your meal.
-            <button id="timer3" class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center">Timer</button>
-            <button class="group flex-inline relative">
-              <span class="text-black bg-red-500 hover:bg-red-300 font-medium rounded-full text-sm px-5 text-center">Chef Note</span>
-              <span class="group-hover:opacity-75 transition-opacity bg-white px-2 text-sm text-black rounded-lg absolute opacity-0 m-5 mx-auto">the_Chicken_Thighs_will_continue_to_cook_while_they_rest,_so_make_sure_you_plan_for_that_in_your_cooking_time_and_temperature</span> 
-          </button>
+            <button id="timer3" class="p-1 bg-zinc-800/80 dark:bg-white text-white dark:text-zinc-800 text-sm rounded m-2">Timer</button>
+            <button class="group flex">
+              <img src="./assets/logo/YesChefFavicon180.png" alt="Chef note" class="max-w-8 m-2">
+              <span class="group-hover:opacity-75 bg-white text-sm text-black rounded-lg absolute opacity-0 m-3 ">the_Chicken_Thighs_will_continue_to_cook_while_they_rest,_so_make_sure_you_plan_for_that_in_your_cooking_time_and_temperature</span> 
+              </button>
             <!-- <button class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center before:content-['Chef_Note'] hover:before:content-['the_Chicken_Thighs_will_continue_to_cook_while_they_rest,_so_make_sure_you_plan_for_that_in_your_cooking_time_and_temperature']">
             </button> -->
           </p>
         </article>
       </section>
     </main>
-    <footer>
-      <button
-        id="themeButton"
-        class="absolute bottom-10 left-10 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded"
-      >
-        ◑ Theme
-      </button>
-    </footer>
-  </body>
+   <script src="./assets/js/cooking.js"></script>
+ </body>
 </html>
 
 <!-- add cooking mode so keeps page awake
