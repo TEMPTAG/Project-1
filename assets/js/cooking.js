@@ -65,6 +65,3 @@ let interval = setInterval(function() {
 }
 }
 timer3.addEventListener("click", timerC3);
-
-
-

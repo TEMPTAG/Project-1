@@ -18,3 +18,26 @@ let interval = setInterval(function() {
 }
 }
 timer4.addEventListener("click", timerC4);
+
+
+
+const timer5 = document.querySelector("#timer5")
+
+let timer5value = 480;
+function timerC5() {
+if (this.textContent === "8 Min Timer"){
+let interval = setInterval(function() {
+    if (timer5value > 0) {
+    timer5value-=1;
+    let minute = Math.floor(timer5value / 60);
+    let seconds = timer5value % 60;
+
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+    timer5.textContent =  `${minute}:${seconds}`;
+} else{
+    clearInterval(interval);
+}
+ }, 1000)
+}
+}
+timer5.addEventListener("click", timerC5);
