@@ -10,102 +10,177 @@
     <script defer src="./assets/js/tailwind.config.js"></script>
     <script defer src="./assets/js/logic.js"></script>
   </head>
-    <!-- add resizing for webpage -->
-  <body class="bg-chicken bg-fixed bg-cover bg-contain bg-no-repeat bg-center text-black dark:text-white">
+  <!-- add resizing for webpage -->
+  <body
+    class="bg-chicken bg-fixed bg-cover bg-contain bg-no-repeat bg-center text-black dark:text-white"
+  >
+    <div
+      class="bg-transparent dark:bg-black/20 fixed inset-0 pointer-events-none"
+    ></div>
 
-      <div class="bg-transparent dark:bg-black/20 fixed inset-0 pointer-events-none"></div>
-
-    <header id="logoBackgroundSmall" class="bg-gradient-to-r from-transparent dark:from-transparent to-white/90 dark:to-zinc-800/90 flex-shrink">
-      <button id="menuButton" class="absolute top-10 left-10 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded">Menu</button>
-      <img id="logo" src="./assets/logo/YesChefLogoBlack.svg" alt="Yes, Chef Logo" class="relative ml-auto mr-4 h-36"/>
+    <header
+      id="logoBackgroundSmall"
+      class="bg-gradient-to-r from-transparent dark:from-transparent to-white/90 dark:to-zinc-800/90 flex-shrink"
+    >
+      <button
+        id="menuButton"
+        class="absolute top-10 left-10 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded"
+      >
+        Menu
+      </button>
+      <img
+        id="logo"
+        src="./assets/logo/YesChefLogoBlack.svg"
+        alt="Yes, Chef Logo"
+        class="relative ml-auto mr-4 h-36"
+      />
     </header>
 
-      <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
 
-      <main>
-        <section class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto">
-          <h1 class="text-4xl font-medium">Let's Start Cooking Birria Beef</h1>
-        </section>
+    <main
+      class="flex flex-1 flex-col items-center justify-center m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max max-w-prose mx-auto"
+    >
+      <h1 class="m-4 text-4xl font-medium">Let's Start Cooking Birria Beef</h1>
 
-        <section class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto">
-        <h1>Prepar the Chuck Roast:</h1>
-        <article class="indent-5">
-          <p class="flex flex- items-center">
-            1. Cut the Chuck Roast into 4" cubes, pat dry, and lightly coat in Olive Oil</p>
-            <br />
-            <p>2. Season the Chuck Roast with Salt and Pepper</p>
-            <br />
-            <p class="flex flex- items-center">
-              3. 3. Heat Olive Oil in a Large Dutch Oven, and sear all sides of the seasoned Chuck Roast on medium-high heat
-              <button class="group flex">
-                <img src="./assets/logo/YesChefFavicon180.png" alt="Chef note" class="max-w-8 m-2">
-                  <span class="group-hover:opacity-75 bg-white text-sm text-black rounded-lg absolute opacity-0 m-3 ">Easiest if you sear the Chuck Roast in 2 separate batches</span> 
-              </button>
-              </p>
-              <br />
-            <p>4. Remove the Dutch Oven from the heat keeping the browned meat remnants in the bowl, and set the Chuck Roast aside in a bowl</p>
-        </article>
-        </section>
-
-        <section class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto">
-          <h2>Prepare the Marinade:</h2>
-          <article class="indent-5">
-            <p class="flex flex- items-center">
-              1. Rinse, stem, and seed the Guajillo, Ancho, and Árbol chiles, and add them to a medium-sized pot
-              <button class="group flex">
-                <img src="./assets/logo/YesChefFavicon180.png" alt="Chef note" class="max-w-8 m-2">
-                  <span class="group-hover:opacity-75 bg-white text-sm text-black rounded-lg absolute opacity-0 m-3 ">Do this with gloves on, and do not touch your face or eyes during this step. Discard gloves after this step.</span> 
-              </button>
-            </p>
-            <br />
-            <p>2. Slice the Roma Tomatoes in half, remove the stems, and add them to the pot</p>
-            <br />
-            <p>3. Peel and slice the Yellow Onion into 1/2" slivers, then add to the pot</p>
-            <br />
-            <p>4. Add the Mexican Cinnamon Sticks, Bay Leaves, and Peppercorns to the pot</p>
-            <br />
-            <p>5. Cover the ingredients with water and bring to a boil over high heat</p>
-            <br />
-            <p>6. Reduce the heat to low, cover, and let the pot simmer for 10 min.
-              <button id="timer8" class="top-10 left-10 p-1 bg-zinc-800/80 dark:bg-white text-white dark:text-zinc-800 text-sm rounded m-2">10 Min Timer</button>
-            </p>
-            <br />
-            <p class="flex flex- items-center">
-              7. After 10min, using a slotted spoon, transfer the ingredients to a blender or food processor (SAVE THE WATER!)
-              <button class="group flex">
-                <img src="./assets/logo/YesChefFavicon180.png" alt="Chef note" class="max-w-8 m-2">
-                  <span class="group-hover:opacity-75 bg-white text-sm text-black rounded-lg absolute opacity-0 m-3">Easiest to do in multiple batches depending on blender or food processor size</span> 
-              </button></p>
-            <br />
-            <p>8. Add 1 cup of the chili water, the Beef Broth, White Vinegar, Garlic, Cumin, Oregano, and Ground Cloves to the blender or food processor, and blend until very smooth</p>
-            <br/>
-            <p>9. Using a fine-mesh strainer, strain the blended sauce into the Dutch Oven, discard any solids from the sauce</p>
-          </article>
-        </section>
-
-        <section class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto">
-          <h3>Cook the Chuck Roast:</h3>
-          <article class="indent-5">
-          <p>1. Take the Dutch Oven with the marinade and add the Chuck Roast back in</p>
-          <br />
-          <p>2. Bring the Chuck Roast and marinade to a boil over high heat</p>
-          <br />
-          <p>3.Reduce to low heat, cover, and cook for 3-3 1/2 hours until the Chuck Roast is fall-apart tender
-            <button id="timer9" class="p-1 bg-zinc-800/80 dark:bg-white text-white dark:text-zinc-800 text-sm rounded m-2">3 1/2 Hour Timer</button></p>
-          <br />
-          <p>4. Remove the Chuck Roast, shred, and return to the Dutch Oven</p>
-        </article>
-        </section>
-
-        <section class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto">
-          <p class="flex flex- items-center">Serve as a stew with cilantro and white onions, or in tacos, burritos, etc.
+      <section class="m-4">
+        <h2 class="font-medium text-xl">Prepar the Chuck Roast:</h2>
+        <ol class="indent-1">
+          <li class="p-2">
+            1. Cut the Chuck Roast into 4" cubes, pat dry, and lightly coat with
+            Avocado Oil
+          </li>
+          <li class="p-2">2. Season the Chuck Roast with Salt and Pepper</li>
+          <li class="p-2 flex items-center">
+            3. Heat Avocado Oil in a Large Dutch Oven, and sear all sides of the
+            seasoned Chuck Roast on medium-high heat
             <button class="group flex">
-              <img src="./assets/logo/YesChefFavicon180.png" alt="Chef note" class="max-w-8 m-2">
-                <span class="group-hover:opacity-75 bg-white text-sm text-black rounded-lg absolute opacity-0 m-3 ">For INCREDIBLE fusion, make ramen with the Birria stew and serve with the shredded Birria Chuck Roast and cilantro/onions....</span> 
+              <img
+                src="./assets/logo/YesChefFavicon180.png"
+                alt="Chef note"
+                class="max-w-8 m-2"
+              />
+              <span
+                class="group-hover:opacity-75 bg-white text-sm text-black rounded-lg absolute opacity-0 m-3"
+                >Easiest if you sear the Chuck Roast in 2 separate batches</span
+              >
             </button>
-          </p>
-        </section>
-      </main>
-      <script src="./assets/js/birriaBeef.js"></script>
+          </li>
+          <li class="p-2">
+            4. Remove the Dutch Oven from the heat keeping the browned meat
+            remnants in the bowl, and set the Chuck Roast aside in a bowl
+          </li>
+        </ol>
+        <h2 class="font-medium text-xl mt-4">Prepare the Marinade:</h2>
+        <ol class="indent-1">
+          <li class="p-2 flex items-center">
+            1. Rinse, stem, and seed the Guajillo, Ancho, and Árbol chiles, and
+            add them to a medium-sized pot
+            <button class="group flex">
+              <img
+                src="./assets/logo/YesChefFavicon180.png"
+                alt="Chef note"
+                class="max-w-8 m-2"
+              />
+              <span
+                class="group-hover:opacity-75 bg-white text-sm text-black rounded-lg absolute opacity-0 m-3"
+                >Do this with gloves on, and do not touch your face or eyes
+                during this step. Discard gloves after this step.</span
+              >
+            </button>
+          </li>
+          <li class="p-2">
+            2. Slice the Roma Tomatoes in half, remove the stems, and add them
+            to the pot
+          </li>
+          <li class="p-2">
+            3. Peel and slice the Yellow Onion into 1/2" slivers, then add to
+            the pot
+          </li>
+          <li class="p-2">
+            4. Add the Mexican Cinnamon Sticks, Bay Leaves, and Peppercorns to
+            the pot
+          </li>
+          <li class="p-2">
+            5. Cover the ingredients with water and bring to a boil over high
+            heat
+          </li>
+          <li class="p-2">
+            6. Reduce the heat to low, cover, and let the pot simmer for 10 min.
+            <button
+              id="timer8"
+              class="p-1 text-nowrap bg-zinc-800/80 dark:bg-white text-white dark:text-zinc-800 text-sm rounded m-2"
+            >
+              10 Min Timer
+            </button>
+          </li>
+          <li class="p-2 flex items-center">
+            7. After 10min, using a slotted spoon, transfer the ingredients to a
+            blender or food processor (SAVE THE WATER!)
+            <button class="group flex">
+              <img
+                src="./assets/logo/YesChefFavicon180.png"
+                alt="Chef note"
+                class="max-w-8 m-2"
+              />
+              <span
+                class="group-hover:opacity-75 bg-white text-sm text-black rounded-lg absolute opacity-0 m-3"
+                >Easiest to do in multiple batches depending on blender or food
+                processor size</span
+              >
+            </button>
+          </li>
+          <li class="p-2">
+            8. Add 1 cup of the chili water, the Beef Broth, White Vinegar,
+            Garlic, Cumin, Oregano, and Ground Cloves to the blender or food
+            processor, and blend until very smooth
+          </li>
+          <li class="p-2">
+            9. Using a fine-mesh strainer, strain the blended sauce into the
+            Dutch Oven, discard any solids from the sauce
+          </li>
+        </ol>
+        <h2 class="font-medium text-xl mt-4">Cook the Chuck Roast:</h2>
+        <ol class="indent-1">
+          <li class="p-2">
+            1. Take the Dutch Oven with the marinade and add the Chuck Roast
+            back in
+          </li>
+          <li class="p-2">
+            2. Bring the Chuck Roast and marinade to a boil over high heat
+          </li>
+          <li class="p-2">
+            3.Reduce to low heat, cover, and cook for 3-3 1/2 hours until the
+            Chuck Roast is fall-apart tender
+            <button
+              id="timer9"
+              class="p-1 text-nowrap bg-zinc-800/80 dark:bg-white text-white dark:text-zinc-800 text-sm rounded m-2"
+            >
+              3 1/2 Hour Timer
+            </button>
+          </li>
+          <li class="p-2">
+            4. Remove the Chuck Roast, shred, and return to the Dutch Oven
+          </li>
+        </ol>
+        <p class="flex items-center font-medium italic">
+          Serve as a stew with cilantro and white onions, or in tacos, burritos,
+          etc.
+          <button class="group flex">
+            <img
+              src="./assets/logo/YesChefFavicon180.png"
+              alt="Chef note"
+              class="max-w-8 m-2"
+            />
+            <span
+              class="group-hover:opacity-75 bg-white text-sm text-black rounded-lg absolute opacity-0 m-3"
+              >For INCREDIBLE fusion, make ramen with the Birria stew and serve
+              with the shredded Birria Chuck Roast and cilantro/onions....</span
+            >
+          </button>
+        </p>
+      </section>
+    </main>
+    <script src="./assets/js/birriaBeef.js"></script>
   </body>
 </html>
