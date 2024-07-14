@@ -1,4 +1,3 @@
-// Function for loading the menu html onto the page and adding event listeners
 document.addEventListener("DOMContentLoaded", () => {
   const menuButton = document.getElementById("menuButton");
   const body = document.body;
@@ -27,34 +26,34 @@ document.addEventListener("DOMContentLoaded", () => {
         overlay.classList.add("hidden");
         body.classList.remove("overlay-active");
       });
+
+      // Add event listener for theme button inside menu
+      const toggleTheme = document.getElementById("themeButton");
+
+      function manageTheme(theme = null) {
+        if (theme) {
+          localStorage.setItem("theme", theme);
+          document.documentElement.className = theme;
+        } else {
+          theme = localStorage.getItem("theme") || "light";
+          document.documentElement.className = theme;
+        }
+        // Update the logo based on the theme
+        if (theme === "dark") {
+          logo.src = "./assets/logo/YesChefLogoWhite.svg";
+        } else {
+          logo.src = "./assets/logo/YesChefLogoBlack.svg";
+        }
+        return theme;
+      }
+
+      let theme = manageTheme();
+
+      toggleTheme.addEventListener("click", () => {
+        theme = theme === "light" ? "dark" : "light";
+        manageTheme(theme);
+      });
     });
-
-  // Function for managing the theme of the website
-  const toggleTheme = document.getElementById("themeButton");
-
-  function manageTheme(theme = null) {
-    if (theme) {
-      localStorage.setItem("theme", theme);
-      document.documentElement.className = theme;
-    } else {
-      theme = localStorage.getItem("theme") || "light";
-      document.documentElement.className = theme;
-    }
-    // Update the logo based on the theme
-    if (theme === "dark") {
-      logo.src = "./assets/logo/YesChefLogoWhite.svg";
-    } else {
-      logo.src = "./assets/logo/YesChefLogoBlack.svg";
-    }
-    return theme;
-  }
-
-  let theme = manageTheme();
-
-  toggleTheme.addEventListener("click", () => {
-    theme = theme === "light" ? "dark" : "light";
-    manageTheme(theme);
-  });
 
   // Set the logo correctly on initial load
   if (localStorage.getItem("theme") === "dark") {

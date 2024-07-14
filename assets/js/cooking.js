@@ -1,6 +1,6 @@
-const timer1 = document.querySelector("#timer1")
+const timer1 = document.querySelector("#timer1");
 
-let timer1value = 3600
+let timer1value = 3600;
 function timerC1() {
 if (this.textContent === "1 Hour Timer"){
 let interval = setInterval(function() {
@@ -24,7 +24,7 @@ timer1.addEventListener("click", timerC1)
 
 const timer2 = document.querySelector("#timer2")
 
-let timer2value = 120
+let timer2value = 120;
 function timerC2() {
 if (this.textContent === "Timer"){
 let interval = setInterval(function() {
