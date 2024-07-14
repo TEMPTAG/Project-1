@@ -20,6 +20,8 @@ let interval = setInterval(function() {
  }, 1000)
 }
 }
+
+
 timer6.addEventListener("click", timerC6);
 
 
