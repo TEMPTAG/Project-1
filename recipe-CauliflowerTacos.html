@@ -15,197 +15,190 @@
     <script defer src="./assets/js/recipe.js"></script>
     <script defer src="./assets/js/logic.js"></script>
   </head>
-  <body class="bg-cauliflower bg-fixed bg-cover bg-contain bg-no-repeat bg-center text-black dark:text-white">
+  <body
+    class="bg-cauliflower bg-fixed bg-cover bg-contain bg-no-repeat bg-center text-black dark:text-white"
+  >
+    <div
+      class="bg-transparent dark:bg-black/20 fixed inset-0 pointer-events-none"
+    ></div>
 
-    <div class="bg-transparent dark:bg-black/20 fixed inset-0 pointer-events-none"></div>
-    
-    <header id="logoBackgroundSmall" class="bg-gradient-to-r from-transparent dark:from-transparent to-white/90 dark:to-zinc-800/90 flex-shrink">
-      <button id="menuButton" class="absolute top-10 left-10 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded">Menu</button>
-      <img id="logo" src="./assets/logo/YesChefLogoBlack.svg" alt="Yes, Chef Logo" class="relative ml-auto mr-4 h-36"/>
+    <header
+      id="logoBackgroundSmall"
+      class="bg-gradient-to-r from-transparent dark:from-transparent to-white/90 dark:to-zinc-800/90 flex-shrink"
+    >
+      <button
+        id="menuButton"
+        class="absolute top-10 left-10 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded"
+      >
+        Menu
+      </button>
+      <img
+        id="logo"
+        src="./assets/logo/YesChefLogoBlack.svg"
+        alt="Yes, Chef Logo"
+        class="relative ml-auto mr-4 h-36"
+      />
     </header>
 
     <div id="menuContainer"></div>
 
-    <main>
-      <section class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto">
-        <h1 class="text-4xl font-medium">Cauliflower Tacos</h1>
-      </section>
+    <main
+      class="flex flex-1 flex-col items-center justify-center m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto"
+    >
+      <h1 class="m-4 text-4xl font-medium">Cauliflower Tacos</h1>
 
-      <section class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto">
-        <h2 class="pb-1">Taco Assembly Ingredients:</h2>
-        <ul>
-          <li class="flex items-center">
-            <input type="checkbox" class="ingredient-checkbox mr-2" />
+      <p class="m-4 max-w-prose">
+        Cauliflower Tacos with Chipotle Romesco Sauce are a vegetarian dish
+        featuring roasted cauliflower florets served in tortillas, topped with a
+        smoky, tangy chipotle romesco sauce made from roasted red peppers, nuts,
+        garlic, and spices, offering a flavorful and satisfying alternative to
+        traditional meat tacos.
+      </p>
+
+      <section class="m-4">
+        <h2 class="font-medium text-xl mb-1">Taco Assembly Ingredients:</h2>
+        <ul class="mb-4">
+          <li>
+            <input type="checkbox" class="mr-2" />
             12-16 Corn Tortillas (Street Taco Size)
           </li>
-        </ul>
-        <ul>
-          <li class="flex items-center">
-            <input type="checkbox" class="ingredient-checkbox mr-2" />
+          <li>
+            <input type="checkbox" class="mr-2" />
             1 Lime
           </li>
-        </ul>
-        <ul>
-          <li class="flex items-center">
-            <input type="checkbox" class="ingredient-checkbox mr-2" />
+          <li>
+            <input type="checkbox" class="mr-2" />
             1 Fresh Bunch of Cilantro
           </li>
-        </ul>
-        <ul>
-          <li class="flex items-center">
-            <input type="checkbox" class="ingredient-checkbox mr-2" />
+          <li>
+            <input type="checkbox" class="mr-2" />
             1/4 Head of Red Cabbage
           </li>
-        </ul>
-        <ul>
-          <li class="flex items-center">
-            <input type="checkbox" class="ingredient-checkbox mr-2" />
+          <li>
+            <input type="checkbox" class="mr-2" />
             2 Small Avocados
           </li>
         </ul>
 
-        <h2 class="pt-4 pb-1">Roasted Cauliflower Ingredients:</h2>
-        <ul>
-          <li class="flex items-center">
-            <input type="checkbox" class="ingredient-checkbox mr-2" />
+        <h2 class="font-medium text-xl mb-1">
+          Roasted Cauliflower Ingredients:
+        </h2>
+        <ul class="mb-4">
+          <li>
+            <input type="checkbox" class="mr-2" />
             2 Heads of Cauliflower
           </li>
-        </ul>
-        <ul>
-          <li class="flex items-center">
-            <input type="checkbox" class="ingredient-checkbox mr-2" />
+          <li>
+            <input type="checkbox" class="mr-2" />
             4 Tablespoons of Avocado Oil
           </li>
-        </ul>
-        <ul>
-          <li class="flex items-center">
-            <input type="checkbox" class="ingredient-checkbox mr-2" />
+          <li>
+            <input type="checkbox" class="mr-2" />
             2 Teaspoons of Ground Cumin
           </li>
-        </ul>
-        <ul>
-          <li class="flex items-center">
-            <input type="checkbox" class="ingredient-checkbox mr-2" />
+          <li>
+            <input type="checkbox" class="mr-2" />
             2 Teaspoons of Ancho Chili Powder
           </li>
-        </ul>
-        <ul>
-          <li class="flex items-center">
-            <input type="checkbox" class="ingredient-checkbox mr-2" />
+          <li>
+            <input type="checkbox" class="mr-2" />
             2 Teaspoons of Smoked Paprika
           </li>
-        </ul>
-        <ul>
-          <li class="flex items-center">
-            <input type="checkbox" class="ingredient-checkbox mr-2" />
+          <li>
+            <input type="checkbox" class="mr-2" />
             2 Teaspoons of Mexican Oregano
           </li>
-        </ul>
-        <ul>
-          <li class="flex items-center">
-            <input type="checkbox" class="ingredient-checkbox mr-2" />
+          <li>
+            <input type="checkbox" class="mr-2" />
             1 Teaspoon Sea Salt
           </li>
         </ul>
 
-        <h2 class="pt-4 pb-1">Chipotle Sauce Ingredients:</h2>
-        <ul>
-          <li class="flex items-center">
-            <input type="checkbox" class="ingredient-checkbox mr-2" />
+        <h2 class="font-medium text-xl mb-1">Chipotle Sauce Ingredients:</h2>
+        <ul class="mb-4">
+          <li>
+            <input type="checkbox" class="mr-2" />
             1/4 Cup Raw Almonds
           </li>
-        </ul>
-        <ul>
-          <li class="flex items-center">
-            <input type="checkbox" class="ingredient-checkbox mr-2" />
+          <li>
+            <input type="checkbox" class="mr-2" />
             1 Can of Diced Fire-Roasted Tomatoes
           </li>
-        </ul>
-        <ul>
-          <li class="flex items-center">
-            <input type="checkbox" class="ingredient-checkbox mr-2" />
+          <li>
+            <input type="checkbox" class="mr-2" />
             1 Can of Chipotle Peppers in Adobo Sauce
           </li>
-        </ul>
-        <ul>
-          <li class="flex items-center">
-            <input type="checkbox" class="ingredient-checkbox mr-2" />
+          <li>
+            <input type="checkbox" class="mr-2" />
             4 Garlic Cloves with Skin
           </li>
-        </ul>
-        <ul>
-          <li class="flex items-center">
-            <input type="checkbox" class="ingredient-checkbox mr-2" />
+          <li>
+            <input type="checkbox" class="mr-2" />
             2 Peeled Garlic Cloves
           </li>
-        </ul>
-        <ul>
-          <li class="flex items-center">
-            <input type="checkbox" class="ingredient-checkbox mr-2" />
+          <li>
+            <input type="checkbox" class="mr-2" />
             1 Lime
           </li>
-        </ul>
-        <ul>
-          <li class="flex items-center">
-            <input type="checkbox" class="ingredient-checkbox mr-2" />
+          <li>
+            <input type="checkbox" class="mr-2" />
             2 Tablespoons of Avocado Oil
           </li>
-        </ul>
-        <ul>
-          <li class="flex items-center">
-            <input type="checkbox" class="ingredient-checkbox mr-2" />
+          <li>
+            <input type="checkbox" class="mr-2" />
             1/2 Teaspoon of Ground Cumin
           </li>
-        </ul>
-        <ul>
-          <li class="flex items-center">
-            <input type="checkbox" class="ingredient-checkbox mr-2" />
+          <li>
+            <input type="checkbox" class="mr-2" />
             1/4 Teaspoon of Smoked Paprika
           </li>
-        </ul>
-        <ul>
-          <li class="flex items-center">
-            <input type="checkbox" class="ingredient-checkbox mr-2" />
+          <li>
+            <input type="checkbox" class="mr-2" />
             1/4 Teaspoon of Sea Salt
           </li>
-        </ul>
-        <ul>
-          <li class="flex items-center">
-            <input type="checkbox" class="ingredient-checkbox mr-2" />
+          <li>
+            <input type="checkbox" class="mr-2" />
             1 Tablespoon of Raw Honey
           </li>
         </ul>
       </section>
 
-      <section
-        class="flex-grow m-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto"
-      >
+      <section>
         <button
           id="generateShoppingList"
-          class="m-4 p-2 bg-zinc-800/50 dark:bg-white/50 text-white rounded"
+          class="m-4 p-2 bg-zinc-800/70 dark:bg-white/40 text-white rounded"
         >
           Generate Shopping List</button
         ><a
           href="./CauliflowerTacos.html"
-          class="m-4 p-2 bg-zinc-800/50 dark:bg-white/50 text-white rounded"
+          class="m-4 p-2 bg-zinc-800/70 dark:bg-white/40 text-white rounded"
         >
           I have everything! Let's Cook!
         </a>
-        <p id="errorMessage" class="text-red-500"></p>
+        <p
+          id="errorMessage"
+          class="text-red-500 text-center font-semibold italic"
+        ></p>
       </section>
       <div
-      id="shoppingListModal"
-      class="fixed inset-0 bg-zinc-800 bg-opacity-75 flex items-center justify-center hidden"
-    >
-      <div class="bg-white text-zinc-800 rounded-lg p-6 w-1/2">
-        <h2 class="text-2xl font-medium mb-4">Shopping List</h2>
-        <ul id="shoppingList" class="list-disc list-inside"></ul>
-        <button
-          id="closeModal"
-          class="mt-4 p-2 bg-gray-800 bg-opacity-50 text-white rounded"
+        id="shoppingListModal"
+        class="fixed inset-0 bg-zinc-800 bg-opacity-75 flex items-center justify-center hidden p-4"
+      >
+        <div
+          id="shoppingListModal"
+          class="bg-white text-zinc-800 rounded-lg p-6 w-max mx-auto"
         >
-          Shopping Done!  Let's cook!
-        </button>
+          <h2 class="text-2xl font-medium underline underline-offset-auto m-4">
+            Shopping List:
+          </h2>
+          <ul id="shoppingList" class="list-disc list-inside m-4 p-4"></ul>
+          <button
+            id="closeModal"
+            class="m-4 p-2 bg-gray-800 bg-opacity-50 text-white rounded"
+          >
+            Shopping done... Let's cook!
+          </button>
+        </div>
       </div>
     </main>
   </body>

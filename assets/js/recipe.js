@@ -21,7 +21,7 @@ function addIngredients(event) {
 
   clearLocalStorage();
 
-  const checkboxes = document.querySelectorAll(".ingredient-checkbox");
+  const checkboxes = document.querySelectorAll("input[type=checkbox]");
   let hasChecked = false;
 
   checkboxes.forEach((checkbox) => {
