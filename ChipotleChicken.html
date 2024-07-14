@@ -8,133 +8,103 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="./assets/js/tailwind.config.js"></script>
-    <script src="./assets/js/cooking.js"></script>
     <script defer src="./assets/js/logic.js"></script>
   </head>
     <!-- add resizing for webpage -->
   <body class="bg-chicken bg-fixed bg-cover bg-contain bg-no-repeat bg-center text-black dark:text-white">
 
-    <div class="bg-transparent dark:bg-black/20 fixed inset-0 pointer-events-none"></div>
+      <div class="bg-transparent dark:bg-black/20 fixed inset-0 pointer-events-none"></div>
 
     <header id="logoBackgroundSmall" class="bg-gradient-to-r from-transparent dark:from-transparent to-white/90 dark:to-zinc-800/90 flex-shrink">
       <button id="menuButton" class="absolute top-10 left-10 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded">Menu</button>
       <img id="logo" src="./assets/logo/YesChefLogoBlack.svg" alt="Yes, Chef Logo" class="relative ml-auto mr-4 h-36"/>
     </header>
 
-    <div id="menuContainer"></div>
+      <div id="menuContainer"></div>
 
-    <main>
+      <main>
 
-      <section class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto">
-        <h1 class="text-4xl font-medium">Let's Start Cooking Adobo Chicken</h1>
-      </section>
+        <section class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto">
+          <h1 class="text-4xl font-medium">Let's Start Cooking Adobo Chicken</h1>
+        </section>
   
-      <section class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto">
-        <h2>Marinate the chicken thighs:</h2>
-        <article class="indent-5">
-          <!-- fix chef note, put in pop up-->
-          <p>
-            1. Place the Chicken Thighs in a resealable bag, or large bowl.
-            <button class="group flex-inline relative">
-              <span class="text-black bg-red-500 hover:bg-red-300 font-medium rounded-full text-sm px-5 text-center">Chef Note</span>
-              <span class="group-hover:opacity-75 transition-opacity bg-white px-2 text-sm text-black rounded-lg absolute opacity-0 m-5 mx-auto">the_Chicken_Thighs_will_continue_to_cook_while_they_rest,_so_make_sure_you_plan_for_that_in_your_cooking_time_and_temperature</span> 
-          </button>
-            <!-- <button class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center before:content-['Chef_Note'] hover:before:content-['poke_a_few_holes_in_the_Chicken_Thighs_with_a_fork_for_even_better_results']" -->
+        <section class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto">
+          <h2>Marinate the chicken thighs:</h2>
+          <article class="indent-5">
+            <p class="flex flex- items-center">
+              1. Place the Chicken Thighs in a resealable bag, or large bowl.
+              <button class="group flex">
+                <img src="./assets/logo/YesChefFavicon180.png" alt="Chef note" class="max-w-8 m-2">
+                  <span class="group-hover:opacity-75 bg-white text-sm text-black rounded-lg absolute opacity-0 m-3 ">poke a few holes in the Chicken Thighs with a fork for even better results</span> 
+              </button>
             
-            </button>
-            
-          </p>
-          <br />
-          <!-- fix chef note, put in pop up -->
-          <p>2.Cover the Chicken Thighs in a generous amount of the marinade</p>
-          <br />
-          <p>3.Seal the bag or the bowl and place in the refrigerator</p>
-          <br />
-          <!-- fix chef note, put in pop up -->
-          <p>
-            4. Allow the meat to marinate for at least an hour.
-            <button id="timer1" class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center">Timer</button>
-            <button class="group flex-inline relative">
-              <span class="text-black bg-red-500 hover:bg-red-300 font-medium rounded-full text-sm px-5 text-center">Chef Note</span>
-              <span class="group-hover:opacity-75 transition-opacity bg-white px-2 text-sm text-black rounded-lg absolute opacity-0 m-5 mx-auto">the_Chicken_Thighs_will_continue_to_cook_while_they_rest,_so_make_sure_you_plan_for_that_in_your_cooking_time_and_temperature</span> 
-          </button>
-            <!-- <button class="text-black bg-red-200 hover:bg-red-300 font-medium rounded-full text-sm px-5 text-center">Timer</button> <button class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center before:content-['Chef_Note'] hover:before:content-['it_isbest_if_it_is_allowed_to_marinate_overnight']"></button>  -->
-          </p>
+              </button>  
+            </p>
+              <br />
+            <p>2.Cover the Chicken Thighs in a generous amount of the marinade
+            </p>
+              <br />
+            <p>3.Seal the bag or the bowl and place in the refrigerator</p>
+              <br />
+            <p class="flex flex- items-center">
+              4. Allow the meat to marinate for at least an hour.
+              <button id="timer1" class="top-10 left-10 p-1 bg-zinc-800/80 dark:bg-white text-white dark:text-zinc-800 text-sm rounded m-2">1 Hour Timer</button>
+                <button class="group flex">
+                  <img src="./assets/logo/YesChefFavicon180.png" alt="Chef note" class="max-w-8 m-2">
+                    <span class="group-hover:opacity-75 bg-white text-sm text-black rounded-lg absolute opacity-0 m-3">it is best if it is allowed to marinate overnight</span> 
+                </button>
+            </p>
         </article>
-        <br />
+          <br />
       </section>
 
       <section class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto">
-        <h3>Cook the Chicken Thighs</h3>
-        <br />
-        <article class="indent-5">
-          <!-- fix chef note, put in pop up, need to add countdown timer -->
-          <p>
-            1. Remove the Chicken Thighs from the refrigerator.
-            <button class="group flex-inline relative">
-              <span class="text-black bg-red-500 hover:bg-red-300 font-medium rounded-full text-sm px-5 text-center">Chef Note</span>
-              <br>
-              <span class="group-hover:opacity-75 transition-opacity bg-white px-2 text-sm text-black rounded-lg absolute opacity-0 m-5 mx-auto">the_Chicken_Thighs_will_continue_to_cook_while_they_rest,_so_make_sure_you_plan_for_that_in_your_cooking_time_and_temperature</span> 
-          </button>
-            <!-- <button class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center before:content-['Chef_Note'] hover:before:content-['Set_the_bowl_or_resealable_bag_out_on_the_counter_for_30-45min_before_cooking']">
-          </button> -->
-         </p>
-          <br />
-          <!-- fix chef note, put it in pop up -->
-          <p>
-            2. Preheat your BBQ grill before cooking.
-            <button class="group flex-inline relative">
-              <span class="text-black bg-red-500 hover:bg-red-300 font-medium rounded-full text-sm px-5 text-center">Chef Note</span>
-              <span class="group-hover:opacity-75 transition-opacity bg-white px-2 text-sm text-black rounded-lg absolute opacity-0 m-5 mx-auto">the_Chicken_Thighs_will_continue_to_cook_while_they_rest,_so_make_sure_you_plan_for_that_in_your_cooking_time_and_temperature</span> 
-          </button>
-            <!-- <button class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center before:content-['Chef_Note'] hover:before:content-['the_hotter_the_better,_as_getting_a_little_char_on_the_marinade_really_brings_out_the_flavor']">
-             
-            </button> -->
-          </p>
-          <br />
-          <!-- need to add countdown timmer, auto refresh when timer hits 0 -->
-          <p>3. Sear the Chicken Thighs 2min per side on the hot grill <button id="timer2" class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center">Timer</button></p>
-          <br />
-          <!-- fix chef note, put it in pop up -->
-          <p>
-            4. Cook the Chicken Thighs until they are cooked through; 165-175
-            degrees internal temperature.
-            <button class="group flex-inline relative">
-              <span class="text-black bg-red-500 hover:bg-red-300 font-medium rounded-full text-sm px-5 text-center">Chef Note</span>
-              <span class="group-hover:opacity-75 transition-opacity bg-white px-2 text-sm text-black rounded-lg absolute opacity-0 m-5 mx-auto">the_Chicken_Thighs_will_continue_to_cook_while_they_rest,_so_make_sure_you_plan_for_that_in_your_cooking_time_and_temperature</span> 
-          </button>
-           
-           
-            <!-- <button class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center before:content-['Chef_Note'] hover:before:content-['Chicken_Thighs_cook_rather_quickly_on_a_hot_grill,_so_keep_a_close_eye_on_them']">
-  
-            </button> -->
-            
-          </p>
-          <br />
-          <!-- fix chet note, put it in pop up-->
-          <p>
-            5. Let the Chicken Thighs rest for 10 minutes after they have been
-            cooked, then serve in your favorite tacos, burritos, or as a
-            stand-alone meat with your meal.
-            <button id="timer3" class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center">Timer</button>
-            <button class="group flex-inline relative">
-              <span class="text-black bg-red-500 hover:bg-red-300 font-medium rounded-full text-sm px-5 text-center">Chef Note</span>
-              <span class="group-hover:opacity-75 transition-opacity bg-white px-2 text-sm text-black rounded-lg absolute opacity-0 m-5 mx-auto">the_Chicken_Thighs_will_continue_to_cook_while_they_rest,_so_make_sure_you_plan_for_that_in_your_cooking_time_and_temperature</span> 
-          </button>
-            <!-- <button class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center before:content-['Chef_Note'] hover:before:content-['the_Chicken_Thighs_will_continue_to_cook_while_they_rest,_so_make_sure_you_plan_for_that_in_your_cooking_time_and_temperature']">
-            </button> -->
-          </p>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <button
-        id="themeButton"
-        class="absolute bottom-10 left-10 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded"
-      >
-        ◑ Theme
-      </button>
-    </footer>
+          <h3>Cook the Chicken Thighs</h3>
+            <br />
+          <article class="indent-5">
+            <p class="flex flex- items-center">
+              1. Remove the Chicken Thighs from the refrigerator.
+              <button class="group flex-inline relative">
+                <button class="group flex">
+                  <img src="./assets/logo/YesChefFavicon180.png" alt="Chef note" class="max-w-8 m-2">
+                    <span class="group-hover:opacity-75 bg-white text-sm text-black rounded-lg absolute opacity-0 m-3 ">Set the bowl or resealable bag out on the counter for 30-45min before cooking</span> 
+              </button>
+            </p>
+              <br />
+            <p class="flex flex- items-center">
+              2. Preheat your BBQ grill before cooking.
+              <button class="group flex">
+                <img src="./assets/logo/YesChefFavicon180.png" alt="Chef note" class="max-w-8 m-2">
+                  <span class="group-hover:opacity-75 bg-white text-sm text-black rounded-lg absolute opacity-0 m-3 ">the hotter the better, as getting a little char on the marinade really brings out the flavor</span> 
+              </button>
+            </p>
+              <br />
+            <p>3. Sear the Chicken Thighs 2min per side on the hot grill 
+              <button id="timer2" class="top-10 left-10 p-1 bg-zinc-800/80 dark:bg-white text-white dark:text-zinc-800 text-sm rounded m-2">2 Min Timer</button></p>
+              <br />
+            <p class="flex items-center">
+              4. Cook the Chicken Thighs until they are cooked through; 165-175
+              degrees internal temperature.
+                <button class="group flex">
+                  <img src="./assets/logo/YesChefFavicon180.png" alt="Chef note" class="max-w-8 m-2">
+                    <span class="group-hover:opacity-75 bg-white text-sm text-black rounded-lg absolute opacity-0 m-3 ">Chicken Thighs cook rather quickly on a hot grill, so keep a close eye on them</span> 
+              </button>
+            </p>
+              <br />
+            <p class="flex flex- items-center">
+              5. Let the Chicken Thighs rest for 10 minutes after they have been
+              cooked, then serve in your favorite tacos, burritos, or as a
+              stand-alone meat with your meal.
+              <button id="timer3" class="p-1 bg-zinc-800/80 dark:bg-white text-white dark:text-zinc-800 text-sm rounded m-2">10 Min Timer</button>
+                <button class="group flex">
+                  <img src="./assets/logo/YesChefFavicon180.png" alt="Chef note" class="max-w-8 m-2">
+                    <span class="group-hover:opacity-75 bg-white text-sm text-black rounded-lg absolute opacity-0 m-3 ">the Chicken Thighs will continue to cook while they rest, so make sure you plan for that in your cooking time and temperature</span> 
+                </button>
+            </p>
+          </article>
+        </section>
+      </main>
+    <script src="./assets/js/cooking.js"></script>
   </body>
 </html>
 

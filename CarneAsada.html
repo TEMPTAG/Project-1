@@ -11,177 +11,99 @@
     <script defer src="./assets/js/cooking.js"></script>
     <script defer src="./assets/js/logic.js"></script>
   </head>
-  <body
-    class="bg-carne bg-fixed bg-cover bg-contain bg-no-repeat bg-center text-black dark:text-white"
-  >
-    <div
-      class="bg-transparent dark:bg-black/20 fixed inset-0 pointer-events-none"
-    ></div>
+  <body class="bg-carne bg-fixed bg-cover bg-contain bg-no-repeat bg-center text-black dark:text-white">
+    <div class="bg-transparent dark:bg-black/20 fixed inset-0 pointer-events-none"></div>
 
-    <header
-      id="logoBackgroundSmall"
-      class="bg-gradient-to-r from-transparent dark:from-transparent to-white/90 dark:to-zinc-800/90 flex-shrink"
-    >
-      <button
-        id="menuButton"
-        class="absolute top-10 left-10 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded"
-      >
-        Menu
-      </button>
-      <img
-        id="logo"
-        src="./assets/logo/YesChefLogoBlack.svg"
-        alt="Yes, Chef Logo"
-        class="relative ml-auto mr-4 h-36"
-      />
-    </header>
+  <header id="logoBackgroundSmall" class="bg-gradient-to-r from-transparent dark:from-transparent to-white/90 dark:to-zinc-800/90 flex-shrink">
+      <button id="menuButton" class="absolute top-10 left-10 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded">Menu</button>
+      <img id="logo" src="./assets/logo/YesChefLogoBlack.svg" alt="Yes, Chef Logo" class="relative ml-auto mr-4 h-36"/></header>
 
     <div id="menuContainer"></div>
 
     <main>
       <section
-        class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto"
-      >
+        class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto">
         <h1 class="text-4xl font-medium">Let's Start Cooking Carne Asada</h1>
       </section>
 
-      <section
-        class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto"
-      >
+      <section class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto">
         <h2>Prepare the marinade:</h2>
         <article class="indent-5">
           <p>
             1. Preheat the broiler, place the Jalepeños on a baking sheet and
             broil until skin begins to turn black, then flip and repeat on the
-            other side
-          </p>
+            other side</p>
           <br />
           <p>2.Stem, seed, and skin the Jalapeños into a blender</p>
           <br />
           <p>3. Core and quarter the Tomato, and add to the blender</p>
           <br />
-          <p>
-            4. Peel and quarter the Onion, and add 3 of the quarters into the
-            blender
-          </p>
+          <p>4. Peel and quarter the Onion, and add 3 of the quarters into the
+            blender</p>
           <br />
           <p>5. Peel the Garlic and add to the blender</p>
           <br />
-          <p>
-            6. Juice the Orange, and add the juice to the blender - save the
-            rind of the orange
-          </p>
+          <p>6. Juice the Orange, and add the juice to the blender - save the
+            rind of the orange</p>
           <br />
           <p>7. Juice 2 of the Limes, and add the juice to the blender</p>
           <br />
-          <p>
-            8. Rinse the cilantro and cut the bottom 2" off of the stems, add
-            half of the bunch to the blender
-          </p>
+          <p>8. Rinse the cilantro and cut the bottom 2" off of the stems, add
+            half of the bunch to the blender</p>
           <br />
-          <p>
-            9.Finally, add the Ancho Chili Powder, Sugar, Salt, Black Pepper,
-            Mirin, Avocado Oil and blend until smooth
-          </p>
+          <p>9.Finally, add the Ancho Chili Powder, Sugar, Salt, Black Pepper,
+            Mirin, Avocado Oil and blend until smooth</p>
         </article>
       </section>
 
-      <section
-        class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto"
-      >
+      <section class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto">
         <h3>Marinate the Arrachera:</h3>
         <article class="indent-5">
-          <p>
-            1. Add the Arrachera to a large bowl or zip lock bag (might take a
-            couple of bags)
-          </p>
+          <p>1. Add the Arrachera to a large bowl or zip lock bag (might take a
+            couple of bags)</p>
           <br />
-          <p>
-            2. Slice half of the Orange Rind and the last 1/4 of the Onion into
-            1/4" slices and add to the Marinade
-          </p>
+          <p>2. Slice half of the Orange Rind and the last 1/4 of the Onion into
+            1/4" slices and add to the Marinade</p>
           <br />
           <p>3. Mix the Corona with the Marinade.</p>
           <br />
-          <p>
-            4. Mix the meat in the marinade, seal, and let it marinate in the
+          <p>4. Mix the meat in the marinade, seal, and let it marinate in the
             refrigerator for 24 hours.
-            <button
-              class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center"
-            >
-              Timer
-            </button>
+            <button id="timer6" class="p-1 bg-zinc-800/80 dark:bg-white text-white dark:text-zinc-800 text-sm rounded m-2">24 Hour Timer</button>
           </p>
           <br />
           <p>5. Flip the meat in the marinade halfway through</p>
         </article>
       </section>
 
-      <section
-        class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto"
-      >
+      <section class="m-4 p-4 bg-white/90 dark:bg-zinc-800/90 text-zinc-900 dark:text-white rounded w-max mx-auto">
         <h4>Cook the Marinated Arrachera</h4>
         <article class="indent-5">
-          <p>
+          <p class="flex flex- items-center">
             1.Put your grill on as high of heat as possible.
-            <button class="group flex-inline relative">
-              <span
-                class="text-black bg-red-500 hover:bg-red-300 font-medium rounded-full text-sm px-5 text-center"
-                >Chef Note</span
-              >
-              <span
-                class="group-hover:opacity-75 transition-opacity bg-white px-2 text-sm text-black rounded-lg absolute opacity-0 m-5 mx-auto"
-                >the_Chicken_Thighs_will_continue_to_cook_while_they_rest,_so_make_sure_you_plan_for_that_in_your_cooking_time_and_temperature</span
-              >
-            </button>
-            <!-- <button class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center before:content-['Chef_Note'] hover:before:content-['The_hotter_the_better,_as_a_little_bit_of_char_on_the_outside_of_the_meat_makes_for_amazing_flavor!']">
-            </button> -->
-          </p>
+            <button class="group flex">
+              <img src="./assets/logo/YesChefFavicon180.png" alt="Chef note" class="max-w-8 m-2">
+              <span class="group-hover:opacity-75 bg-white text-sm text-black rounded-lg absolute opacity-0 m-3 ">The hotter the better, as a little bit of char on the outside of the meat makes for amazing flavor!</span> 
+              </button></p>
           <br />
           <p>2. Lightly oil the grill with some Avocado oil</p>
           <br />
-          <p>
-            3. Cook the Arrachera until desired temperature
-            <!-- <button class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center before:content-['Chef_Note'] hover:before:content-['The_thin_Arrachera_cooks_very_fast_so_do_not_leave_it_unattended!']"></button> -->
-            <button class="group flex-inline relative">
-              <span
-                class="text-black bg-red-500 hover:bg-red-300 font-medium rounded-full text-sm px-5 text-center"
-                >Chef Note</span
-              >
-              <span
-                class="group-hover:opacity-75 transition-opacity bg-white px-2 text-sm text-black rounded-lg absolute opacity-0 m-5 mx-auto"
-                >the_Chicken_Thighs_will_continue_to_cook_while_they_rest,_so_make_sure_you_plan_for_that_in_your_cooking_time_and_temperature</span
-              >
-            </button>
-          </p>
+          <p class="flex flex- items-center">3. Cook the Arrachera until desired temperature
+            <button class="group flex">
+              <img src="./assets/logo/YesChefFavicon180.png" alt="Chef note" class="max-w-8 m-2">
+              <span class="group-hover:opacity-75 bg-white text-sm text-black rounded-lg absolute opacity-0 m-3 ">he thin Arrachera cooks very fast, so do not leave it unattended!</span> 
+              </button></p>
           <br />
-          <p>
-            4. Let stand for 10 minutes after removing from the grill and slice
+          <p>4. Let stand for 10 minutes after removing from the grill and slice
             against the grain
-            <button
-              class="text-black bg-orange-200 hover:bg-orange-300 font-medium rounded-full text-sm px-5 text-center"
-            >
-              Timer
-            </button>
-
-            <!-- <button class="text-black bg-red-200 hover:bg-red-300 font-medium rounded-full text-sm px-5 text-center">Timer</button> -->
-          </p>
+            <button id="timer7" class="p-1 bg-zinc-800/80 dark:bg-white text-white dark:text-zinc-800 text-sm rounded m-2">10 Min Timer</button></p>
           <br />
-          <p>
-            5. Serve with sliced Lime wedges from the remaining lime, and diced
-            Cilantro
-          </p>
+          <p>5. Serve with sliced Lime wedges from the remaining lime, and diced
+            Cilantro</p>
           <br />
         </article>
       </section>
     </main>
-    <footer>
-      <button
-        id="themeButton"
-        class="absolute bottom-10 left-10 p-2 bg-zinc-800 bg-opacity-30 text-white dark:text-zinc-300 rounded"
-      >
-        ◑ Theme
-      </button>
-    </footer>
+    <script src="./assets/js/carneAsada.js"></script>
   </body>
 </html>
