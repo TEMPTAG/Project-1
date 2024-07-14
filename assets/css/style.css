@@ -4,16 +4,6 @@
   --light-font: white;
   --dark-font: rgb(44, 44, 44);
 }
-
-.homepage-bg {
-  background-image: url("../images/HomePageBackground.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  margin: 0;
-}
-
 #logo {
   max-width: 400px;
   max-height: 400px;
@@ -34,60 +24,6 @@
 #logoBackgroundSmall {
   width: 100%;
   max-height: 200px;
-}
-
-.alPastor-bg {
-  background-image: url("../images/AlPastorBackground.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  margin: 0;
-}
-
-.birria-bg {
-  background-image: url("../images/BirriaBeefBackground.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  margin: 0;
-}
-
-.carneAsada-bg {
-  background-image: url("../images/CarneAsadaBackground.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  margin: 0;
-}
-
-.cauliflower-bg {
-  background-image: url("../images/CauliflowerTacosBackground.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  margin: 0;
-}
-
-.chicken-bg {
-  background-image: url("../images/ChipotleChickenBackground.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  margin: 0;
-}
-
-.about-bg {
-  background-image: url("../images/AboutPageBackground.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  margin: 0;
 }
 
 .overlay-active::before {
