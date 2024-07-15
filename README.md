@@ -2,7 +2,7 @@
 
 ---
 
-![Website](https://img.shields.io/website?url=https%3A%2F%2Ftemptag.github.io%2FProject-1%2F&up_message=Online&up_color=green&down_message=Offline&down_color=red)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Ftemptag.github.io%2FYes-Chef%2F&up_message=Online&up_color=green&down_message=Offline&down_color=red)
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/TEMPTAG/Project-1?color=blue)
 
