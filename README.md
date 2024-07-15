@@ -2,13 +2,17 @@
 
 ---
 
-![Website](https://img.shields.io/website?url=https%3A%2F%2Ftemptag.github.io%2FProject-1%2F&up_message=Online&up_color=green&down_message=Offline&down_color=red)
+[Visit the Deployed Website](https://temptag.github.io/Yes-Chef/index.html)
+
+![Website](https://img.shields.io/website?url=https%3A%2F%2Ftemptag.github.io%2FYes-Chef%2F&up_message=Online&up_color=green&down_message=Offline&down_color=red)
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/TEMPTAG/Project-1?color=blue)
 
 ## Description
 
-Coming soon...
+Yes, Chef! Is a single application helps you select a recipe, generate a shopping list, and guide you through the cooking process.
+
+This was our Project 1 for our Coding Bootcamp. Mason Ott, Jesse Anderson, and Ian Ferguson were teamed up to tackle the assignment that can be seen [HERE](./assets/assignment/assignment.md).
 
 ## Table of Contents
 
@@ -29,7 +33,15 @@ Coming soon...
 
 ## Features
 
-Coming Soon...
+| Technology Used       |                                                 Resource URL                                                 |
+| --------------------- | :----------------------------------------------------------------------------------------------------------: |
+| HTML                  |    [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)    |
+| CSS                   |     [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)     |
+| Git                   |                                 [https://git-scm.com/](https://git-scm.com/)                                 |
+| Tailwind CSS          |                             [https://tailwindcss.com/](https://tailwindcss.com/)                             |
+| Custom CSS & JS Modal | [https://www.w3schools.com/howto/howto_css_modals.asp](https://www.w3schools.com/howto/howto_css_modals.asp) |
+| Favicon               |      [https://www.w3schools.com/html/html_favicon.asp](https://www.w3schools.com/html/html_favicon.asp)      |
+| Fetch API             |        [https://www.w3schools.com/js/js_api_fetch.asp](https://www.w3schools.com/js/js_api_fetch.asp)        |
 
 ---
 
@@ -65,9 +77,7 @@ _All image assets are licensed through Adobe Stock for use on this project. Logo
 
 ## Credits
 
-Custom CSS & JS Modal: https://www.w3schools.com/howto/howto_css_modals.asp
-Favicon: https://www.w3schools.com/html/html_favicon.asp
-Tailwind CSS: https://tailwindcss.com/
+Coming soon...
 
 ---
 
