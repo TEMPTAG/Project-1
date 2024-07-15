@@ -20,7 +20,6 @@ This was our Project 1 for our Coding Bootcamp. Mason Ott, Jesse Anderson, and I
 - [Usage](#usage)
 - [Features](#features)
 - [Contributors](#contributors)
-- [Contact](#contact)
 - [License](#license)
 
 ## Installation
@@ -72,12 +71,6 @@ Coming soon...
 - [GitHub](https://github.com/TEMPTAG)
 
 _All image assets are licensed through Adobe Stock for use on this project. Logos are owned by Ian Ferguson and licened for use on this project._
-
----
-
-## Credits
-
-Coming soon...
 
 ---
 
