@@ -3,24 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- page title -->
     <title>Yes, Chef!</title>
+    <!-- favicon -->
     <link
       rel="icon"
       href="./assets/logo/YesChefFavicon2180.png"
       type="image/png"
     />
+    <!-- link to the css file -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- link to the tailwind cdn css file -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- link to the local tailwind config js file -->
     <script defer src="./assets/js/tailwind.config.js"></script>
+    <!-- link to the logic js file containing menu and theme functions-->
     <script defer src="./assets/js/logic.js"></script>
   </head>
+
+  <!-- body element which contains the background image and css formatting -->
   <body
     class="bg-home bg-fixed bg-cover bg-contain bg-no-repeat bg-center text-black dark:text-white"
   >
+    <!-- div containing the background overlay to darken background when dark theme is selected -->
     <div
       class="bg-transparent dark:bg-black/20 fixed inset-0 pointer-events-none"
     ></div>
 
+    <!-- header element containing the menu button -->
     <header>
       <button
         id="menuButton"
@@ -30,8 +40,10 @@
       </button>
     </header>
 
+    <!-- div containing the menu items when fetched from menu.html -->
     <div id="menuContainer"></div>
 
+    <!-- main element containing the logo and logo background-->
     <main>
       <div
         id="logoBackground"
