@@ -29,20 +29,20 @@ In this project we created a repository in github from there we clone it down to
 
 ## Usage
 
-Yes, Chef is a website with a library of recipies through a menu button
--[Menu] [assets/images/MenuScreenShot.jpg]
+Yes, Chef is a website with a library of recipies that you can access with menu button
+-[Menu](./assets/images/MenuScreenShot.jpg)
 
 Once menu button is clicked it will bring you to the library of recipes, about page, home page button, as well as theme changer to light and dark mode
--[recipe library] [assets/images/libraryOfRecipes.jpg]
+-[recipe library][./assets/images/libraryOfRecipes.jpg]
 
 Recipe Page walks you through what ingredients are needed, you are able to check ingredients that you currently have then create a shopping list that you can take to the store.
 
-- [ingredients] [assets/images/ingredients.jpg]
-- [ShoppingList] [assets/images/ShppingList.jpg]
+- [ingredients](./assets/images/ingredients.jpg)
+- [ShoppingList](./assets/images/ShppingList.jpg)
 
 Cooking Pages walk you through step by step instrucations on how to prepare the meal with timers and notes on how to improve the recipe.
 
-- [CookingPages] [assets/images/CookingPages.jpg]
+- [CookingPages](./assets/images/CookingPages.jpg)
 
 
 
