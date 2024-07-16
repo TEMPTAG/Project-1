@@ -90,7 +90,6 @@ Cooking Pages walk you through step by step instrucations on how to prepare the 
 
 Third Party assets: Tailwind CSS
 
-
 ## License
 
 This student project is under the MIT License. The details of the [LICENSE](./LICENSE) can be seen in the linked file.
